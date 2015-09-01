@@ -1,1 +1,16 @@
+<h2>Popular Activities</h2>
+<span>{{#link-to 'activities.create'}}+ Add new{{/link-to}}</span>
+<span>{{#link-to 'activities'}}Search{{/link-to}}</span>
+
+{{#each model as |activity|}}
+    {{#unless activity.isNew}}
+
+    <h3>{{activity.name}}</h3>
+    <p>{{activity.category}}</p>
+    <p>{{activity.url}}</p>
+
+    {{/unless}}
+{{/each}}
+
 {{outlet}}
+

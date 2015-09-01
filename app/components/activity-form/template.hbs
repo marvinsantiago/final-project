@@ -1,0 +1,12 @@
+<form class="activity-form" {{action 'save' on='submit'}}>
+<label for="activity-name">Name</label>
+  {{input type='text' value=name}}
+
+<label for="activity-category">Category</label>
+  {{input type='text' value=category}}
+
+<label for="activity-url">Website</label>
+  {{input type='text' value=url}}
+
+    <button type='submit'>Save</button>
+</form>
