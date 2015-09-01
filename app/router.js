@@ -13,8 +13,8 @@ Router.map(function() {
   });
   this.route('events', function() {
     this.route('create', {path: '/new'});
-    this.route('show');
-    this.route('edit');
+    this.route('show', {path: '/:events_id'});
+    this.route('edit', {path: '/:events_id/edit'});
   });
   this.route('login', {path: '/login'});
   this.route('signup', {path: '/signup'});
