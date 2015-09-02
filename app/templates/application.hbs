@@ -1,10 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
-<ul>
+<nav>
+    <ul>
+    <li>{{#link-to 'index'}}Welcome to Ember{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{#link-to 'login'}}Login{{/link-to}}</li>
     <li>{{#link-to 'signup'}}SignUp{{/link-to}}</li>
 </ul>
+</nav>
 
 
 {{outlet}}
+
+
+{{md-modal-container}}
