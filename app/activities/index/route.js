@@ -16,5 +16,6 @@ export default Ember.Route.extend({
     } else {
       return this.store.findAll('activity');
     }
+
   }
 });
