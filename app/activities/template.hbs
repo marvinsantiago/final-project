@@ -1,6 +1,8 @@
 <h2>Popular Activities</h2>
 <span>{{#link-to 'activities.create'}}+ New{{/link-to}}</span>
-<span>{{#link-to 'activities'}}Search{{/link-to}}</span>
+<span>{{#link-to 'activities.index'(query-params category='Sports')}}Sports{{/link-to}}</span>
+<span>{{#link-to 'activities.index'(query-params category='Dance')}}Dance{{/link-to}}</span>
+<span>{{#link-to 'activities.index'(query-params category='Tutoring')}}Tutoring{{/link-to}}</span>
 
 {{outlet}}
 
