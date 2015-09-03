@@ -8,8 +8,19 @@
 </ul>
 </nav>
 
+<div class="page-wrap">
+    {{outlet}}
+</div>
 
-{{outlet}}
+<footer class="site-footer">
+    <ul>
+        <li>{{fa-icon 'fa-copyright'}}Copyright 2015</li>
+        <li><a href="#">{{fa-icon 'fa-twitter'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-instagram'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-github'}}</a></li>
+    </ul>
+</footer>
+
 
 
 {{md-modal-container}}
