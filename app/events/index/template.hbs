@@ -1,6 +1,6 @@
 <h1>Upcoming Events</h1>
 <ul>
-<li>{{#link-to 'events.create'}}+ Add new event{{/link-to}}</li>
+<li>{{#link-to 'events.create'}}{{fa-icon 'fa-plus-square-o'}}New event{{/link-to}}</li>
 {{#each model as |event|}}
     {{#unless event.isNew}}
     <li>
