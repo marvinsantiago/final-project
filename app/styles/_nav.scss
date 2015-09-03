@@ -1,6 +1,5 @@
 nav {
   background: $maincolor;
-  color: $mainfontcolor;
 
   ul {
     @include outer-container(1120px);
@@ -17,5 +16,9 @@ nav {
   a {
     color: inherit;
     text-decoration: none;
+  }
+  a:hover {
+    background: darken($maincolor, 10%);
+
   }
 }

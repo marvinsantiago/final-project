@@ -16,7 +16,8 @@
     "neat": "~1.7.2",
     "firebase": "^2.1.0",
     "materialize": "~0.97.0",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "mousetrap": "ccampbell/mousetrap#~1.5.3"
   },
   "resolutions": {
     "jquery": "^1.11.3"

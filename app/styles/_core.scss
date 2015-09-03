@@ -3,8 +3,9 @@ $mainfontcolor: #ffffff;
 $font: Verdana, sans-serif;
 
 html {
-    background: #f7f2f2;
+    background: lighten(#9eaaa1, 20%);
     font-family: $font;
+
 
 }
 a {
