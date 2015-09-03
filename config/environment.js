@@ -4,13 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'final-project',
     environment: environment,
+    'simple-auth': {
+      session: 'session:with-user'
+    },
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: 'https://ms-madaddox.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
-    torii: {
-      sessionServiceName: 'session'
-    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

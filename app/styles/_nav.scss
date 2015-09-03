@@ -2,7 +2,7 @@ nav {
   background: $maincolor;
 
   ul {
-    @include outer-container(1120px);
+    @include outer-container();
     height: 50px;
   }
 

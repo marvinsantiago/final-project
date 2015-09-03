@@ -6,8 +6,9 @@ export default Ember.Route.extend({
   },
   actions: {
     delete: function(activity) {
-      activity.destroyRecord();
-
+      if (window.confirm('Are you sure you want to delete?')) {
+        activity.destroyRecord();
+      }
       this.transitionTo('activities.index');
     }
   }

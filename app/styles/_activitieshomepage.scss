@@ -1,0 +1,9 @@
+
+
+.activities {
+    @include span-columns(6);
+}
+.events {
+    @include span-columns(6);
+    color: red;
+}

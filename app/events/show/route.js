@@ -7,9 +7,10 @@ export default Ember.Route.extend({
   },
   actions: {
     delete: function(event) {
-      event.destroyRecord();
-
-      this.transitionTo('events');
+      if (window.confirm('Are you sure you want to delete?')) {
+        event.destroyRecord();
+      }
+        this.transitionTo('events');
     }
   }
 });

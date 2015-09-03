@@ -17,7 +17,9 @@
     "firebase": "^2.1.0",
     "materialize": "~0.97.0",
     "font-awesome": "~4.4.0",
-    "mousetrap": "ccampbell/mousetrap#~1.5.3"
+    "mousetrap": "ccampbell/mousetrap#~1.5.3",
+    "reset-scss": "*",
+    "ember-simple-auth": "0.8.0"
   },
   "resolutions": {
     "jquery": "^1.11.3"
