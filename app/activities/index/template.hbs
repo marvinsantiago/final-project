@@ -3,9 +3,7 @@
     {{#unless activity.isNew}}
     <li>
     {{#link-to 'activities.show' activity}}
-        <h3>{{activity.name}}</h3>
-        <p>{{activity.category}}</p>
-        <a href="{{activity.url}}">{{activity.url}}</a>
+        <h3>{{activity.name}} - <span><a href="{{activity.url}}">{{activity.url}}</a></span></h3>
     {{/link-to}}
     </li>
     {{/unless}}

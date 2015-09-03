@@ -5,23 +5,29 @@
     border: 2px solid;
     margin: 20px;
     padding: 20px;
+    font-family: inherit;
     h4 {
         font-size: 2rem;
         font-weight: bold;
         padding-bottom: 10px;
 
+
     }
 }
 .events {
-    @include span-columns(3);
+    @include span-columns(4);
     color: red;
     padding: 20px;
     border: 2px solid;
     margin: 20px;
+
     h6 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         font-weight: bold;
         text-align: center;
         padding-bottom: 10px;
+    }
+    ul li {
+        font-size: 0.9rem;
     }
 }

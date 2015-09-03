@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 
   actions: {
     save: function() {
-      var data = this.getProperties('name', 'category', 'location', 'date');
+      var data = this.getProperties('name', 'description', 'location', 'date', 'price', 'url');
       this.sendAction('save', this.get('event'), data);
     }
   }

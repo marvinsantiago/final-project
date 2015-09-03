@@ -3,7 +3,7 @@
     <h4>Popular Activities</h4>
     <ul>
         {{#each model.activities as |activity|}}
-            <li>{{activity.name}}</li>
+            <li>{{fa-icon 'fa-star-o'}} - {{activity.name}}</li>
         {{/each}}
     </ul>
 </div>
@@ -17,4 +17,5 @@
     </ul>
 </div>
 
+{{outlet}}
 
