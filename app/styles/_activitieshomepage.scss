@@ -1,9 +1,27 @@
 
 
-.activities {
-    @include span-columns(6);
+.activites {
+    @include span-columns(7);
+    border: 2px solid;
+    margin: 20px;
+    padding: 20px;
+    h4 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
 }
 .events {
-    @include span-columns(6);
+    @include span-columns(3);
     color: red;
+    padding: 20px;
+    border: 2px solid;
+    margin: 20px;
+    h6 {
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 }
