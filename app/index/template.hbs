@@ -1,5 +1,16 @@
-{{!--  <ul>
-    <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
-    <li>{{#link-to 'events'}}Events{{/link-to}}</li>
-</ul> --}}
-{{outlet}}
+<div>
+    <ul>
+        {{#each activities}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+</div>
+
+<div>
+    <ul>
+        {{#each events}}
+            <li>{{name}}</li>
+        {{/each}}
+    </ul>
+</div>
+

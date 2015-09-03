@@ -1,5 +1,12 @@
 @import "bourbon";
 @import "neat";
+@import "bower_components/font-awesome/scss/font-awesome";
 
 // @import 'materialize';
 // @import 'ember-cli-materialize';
+
+@import "_core";
+@import "_nav";
+
+
+

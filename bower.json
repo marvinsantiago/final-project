@@ -15,7 +15,8 @@
     "bourbon": "4.2.3",
     "neat": "~1.7.2",
     "firebase": "^2.1.0",
-    "materialize": "~0.97.0"
+    "materialize": "~0.97.0",
+    "font-awesome": "~4.4.0"
   },
   "resolutions": {
     "jquery": "^1.11.3"
