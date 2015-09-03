@@ -1,8 +1,12 @@
-<h4>{{model.name}}</h4>
+<div>
+    <h4>{{model.name}}</h4>
+    <p>{{model.location}}</p>
+    <p>{{model.date}}</p>
+</div>
 
-<p>{{model.location}}</p>
-
-<p>{{model.date}}</p>
-
+<div>
+    {{#link-to 'events.edit' model}}Edit{{/link-to}}
+    <a href="#"{{action 'delete' model}}>Delete</a>
+</div>
 
 {{outlet}}

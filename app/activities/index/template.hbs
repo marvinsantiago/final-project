@@ -1,9 +1,15 @@
+<ul>
 {{#each model as |activity|}}
     {{#unless activity.isNew}}
-
-    <h3>{{activity.name}}</h3>
-    <p>{{activity.category}}</p>
-    <a href="{{activity.url}}">{{activity.url}}</a>
-
+    <li>
+    {{#link-to 'activities.show' activity}}
+        <h3>{{activity.name}}</h3>
+        <p>{{activity.category}}</p>
+        <a href="{{activity.url}}">{{activity.url}}</a>
+    {{/link-to}}
+    </li>
     {{/unless}}
 {{/each}}
+</ul>
+
+{{outlet}}

@@ -1,1 +1,11 @@
-{{outlet}}
+<div>
+    <h4>{{model.name}}</h4>
+
+    <p>{{model.location}}</p>
+    <p>{{model.url}}</p>
+</div>
+
+<div>
+    {{#link-to 'activities.edit' model}}Edit{{/link-to}}
+    <a href="#"{{action 'delete' model}}>Delete</a>
+</div>

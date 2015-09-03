@@ -1,0 +1,15 @@
+<h1>Upcoming Events</h1>
+<ul>
+<li>{{#link-to 'events.create'}}+ Add new event{{/link-to}}</li>
+{{#each model as |event|}}
+    {{#unless event.isNew}}
+    <li>
+    <h3>{{event.name}}</h3>
+    <p>{{event.date}}</p>
+    {{#link-to 'events.show' event}}Event Details{{/link-to}}
+    </li>
+    {{/unless}}
+{{/each}}
+</ul>
+
+{{outlet}}
