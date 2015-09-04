@@ -1,5 +1,6 @@
 nav {
-  background: $maincolor;
+  background-color: $maincolor;
+  // background-image: linear-gradient(to bottom,#acea88 0%, #74b867 50%, #569f58 50%, #5da45a 100%);
 
   ul {
     @include outer-container();

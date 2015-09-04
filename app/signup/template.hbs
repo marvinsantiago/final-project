@@ -1,4 +1,19 @@
+{{!-- {{signup-form user=model save='save'}} --}}
 
-{{signup-form user=model save='save'}}
+
+<div id="form">
+<form class="signup-form" {{action 'signup' username email password on='submit'}}>
+<label for="signup-username">Username</label>
+  {{input type='text' value=username}}
+
+<label for="signup-email">Email</label>
+  {{input type='email' value=email}}
+
+<label for="signup-password">Password</label>
+  {{input type='password' value=password}}
+
+    <button id='save' type='submit'>Save</button>
+</form>
+</div>
 
 

@@ -1,17 +1,13 @@
 import Ember from 'ember';
+import UnauthenticatedRouteMixin from 'simple-auth/mixins/unauthenticated-route-mixin';
 
-export default Ember.Route.extend({
-    model: function() {
-    return this.store.createRecord('user');
-  },
-
+export default Ember.Route.extend(UnauthenticatedRouteMixin, {
   actions: {
-    save: function(user, data) {
-      user.setProperties(data);
-
-      user.save().then(() => {
-        this.transitionTo('activities');
+    login(email, password) {
+      this.get('session').authenicate('authenticator:firebase', {
+        email,
+        password
       });
     }
-  }
+    }
 });
