@@ -2,7 +2,7 @@
 
 .activites {
     @include span-columns(7);
-    border: 2px solid;
+    border: 2px solid #e0e0e0;
     margin: 20px;
     padding: 20px;
     font-family: inherit;
@@ -16,9 +16,8 @@
 }
 .events {
     @include span-columns(4);
-    color: red;
     padding: 20px;
-    border: 2px solid;
+    border: 1px solid #e0e0e0;
     margin: 20px;
 
     h6 {

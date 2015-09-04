@@ -14,6 +14,10 @@
 body {
     height: 100%;
 }
+// .background {
+
+//     background-image: url('/images/activities.gif');
+// }
 
 .activities-main {
     @include span-columns(12);
@@ -26,9 +30,7 @@ body {
         font-family: inherit;
     }
     button {
-        padding: 5px;
-        border-radius: 1px;
-        font-family: inherit;
+        @include button(shiny, $maincolor);
     }
 }
 
