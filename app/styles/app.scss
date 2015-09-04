@@ -9,6 +9,7 @@
 @import "_core";
 @import "_nav";
 @import "_activitieshomepage";
+@import "_events";
 @import "_footer";
 
 body {
@@ -31,6 +32,27 @@ body {
     }
     button {
         @include button(shiny, $maincolor);
+    }
+}
+#form {
+    @include outer-container(400px);
+    margin-top: 20px;
+    border: 5px solid #e0e0e0;
+    padding: 20px;
+}
+.activity-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+        font-family: inherit;
+    }
+}
+
+.event-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+        font-family: inherit;
     }
 }
 

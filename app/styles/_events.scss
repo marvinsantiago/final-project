@@ -1,0 +1,10 @@
+button {
+        @include button(shiny, $maincolor);
+    }
+.events-main ul, li {
+        h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+}

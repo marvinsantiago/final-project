@@ -1,15 +1,19 @@
-<h1>Upcoming Events</h1>
-<ul>
-<li>{{#link-to 'events.create'}}{{fa-icon 'fa-plus-square-o'}}New event{{/link-to}}</li>
-{{#each model as |event|}}
-    {{#unless event.isNew}}
-    <li>
-    <h3>{{event.name}}</h3>
-    <p>{{event.date}}</p>
-    {{#link-to 'events.show' event}}Event Details{{/link-to}}
-    </li>
-    {{/unless}}
-{{/each}}
-</ul>
+<div class="events-main">
+    <h1>Upcoming Events</h1>
+    <ul>
+    <li><button>{{#link-to 'events.create'}}{{fa-icon 'fa-calendar-plus-o'}}New event{{/link-to}}</button></li>
+    {{#each model as |event|}}
+        {{#unless event.isNew}}
+        <li>
+        <h3>{{event.name}}</h3>
+        <p>{{event.date}}</p>
+        {{#link-to 'events.show' event}}Event Details{{/link-to}}
+        </li>
+        {{/unless}}
+    {{/each}}
+    </ul>
+
+
+</div>
 
 {{outlet}}
