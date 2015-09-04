@@ -9,6 +9,7 @@
 @import "_core";
 @import "_nav";
 @import "_activitieshomepage";
+@import "_activities-list";
 @import "_events";
 @import "_footer";
 
@@ -49,6 +50,20 @@ body {
 }
 
 .event-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+        font-family: inherit;
+    }
+}
+.login-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+        font-family: inherit;
+    }
+}
+.signup-form label, input {
     @include span-columns(12);
     #save {
         @include span-columns(12);

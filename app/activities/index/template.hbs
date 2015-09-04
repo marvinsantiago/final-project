@@ -1,3 +1,4 @@
+<div class="activities-list">
 <ul>
 {{#each model as |activity|}}
     {{#unless activity.isNew}}
@@ -9,5 +10,6 @@
     {{/unless}}
 {{/each}}
 </ul>
+</div>
 
 {{outlet}}
