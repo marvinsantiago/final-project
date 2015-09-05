@@ -2,9 +2,7 @@
 
 
 <div id="form">
-<form class="signup-form" {{action 'signup' username email password on='submit'}}>
-<label for="signup-username">Username</label>
-  {{input type='text' value=username}}
+<form class="signup-form" {{action 'signup' email password on='submit'}}>
 
 <label for="signup-email">Email</label>
   {{input type='email' value=email}}

@@ -4,7 +4,7 @@ import UnauthenticatedRouteMixin from 'simple-auth/mixins/unauthenticated-route-
 export default Ember.Route.extend(UnauthenticatedRouteMixin, {
   actions: {
     login(email, password) {
-      this.get('session').authenicate('authenticator:firebase', {
+      this.get('session').authenticate('authenticator:firebase', {
         email,
         password
       });

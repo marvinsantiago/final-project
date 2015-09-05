@@ -2,9 +2,9 @@
 {{!-- {{login-form user=model save='save'}} --}}
 
 <div id="form">
-<form class="login-form" {{action 'login' username password on='submit'}}>
-<label for="login-username">Username</label>
-  {{input type='text' value=username}}
+<form class="login-form" {{action 'login' email password on='submit'}}>
+<label for="login-email">Email</label>
+  {{input type='text' value=email}}
 
 <label for="login-password">Password</label>
   {{input type='password' value=password}}
@@ -13,9 +13,3 @@
 </form>
 </div>
 
-{{#if session.currentUser}}
-  <h3>Logged In User</h3>
-
-  <p><strong>Email: </strong>{{session.currentUser.email}}</p>
-  <p><strong>Username: </strong>{{session.currentUser.username}}</p>
-{{/if}}

@@ -5,9 +5,15 @@ module.exports = function(environment) {
     modulePrefix: 'final-project',
     environment: environment,
     'simple-auth': {
-      session: 'session:with-user'
+      session: 'session:with-user',
+      routeAfterAuthentication: 'dashboard',
+      routeIfAlreadyAuthenticated: 'dashboard'
     },
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+     },
     firebase: 'https://ms-madaddox.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',

@@ -1,14 +1,21 @@
 <nav>
-    {{#if session.isAuthenticated}}
+{{!--     {{#if session.isAuthenticated}}
+    {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
+    {{else}}
     {{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
-    {{/if}}
+    {{/if}} --}}
+
     <ul>
     {{#if session.isAuthenticated}}
+{{!--     {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}} --}}
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     {{else}}
+{{!--     <li>{{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}</li> --}}
+    <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
+    <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{link-to 'Login' 'login'}}</li>
-    <li>{{link-to 'Signup' 'signup'}}{{fa-icon 'fa-sign-in'}}</li>
+    <li>{{link-to 'Signup' 'signup'}}</li>
     {{/if}}
 </ul>
 </nav>

@@ -10,6 +10,8 @@ Router.map(function() {
 
   this.route('login', {path: '/login'});
   this.route('signup', {path: '/signup'});
+  this.route('dashboard', {path: '/'});
+
   this.route('users');
   this.route('user-profile', {path: '/'});
   this.route('activities', function() {
