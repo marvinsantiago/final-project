@@ -7,11 +7,11 @@
 
     <ul>
     {{#if session.isAuthenticated}}
-{{!--     {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}} --}}
+    {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     {{else}}
-{{!--     <li>{{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}</li> --}}
+    <li>{{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{link-to 'Login' 'login'}}</li>

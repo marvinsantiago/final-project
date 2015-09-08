@@ -10,10 +10,10 @@ Router.map(function() {
 
   this.route('login', {path: '/login'});
   this.route('signup', {path: '/signup'});
-  this.route('dashboard', {path: '/'});
+  this.route('dashboard');
 
   this.route('users');
-  this.route('user-profile', {path: '/'});
+  this.route('user-profile');
   this.route('activities', function() {
     this.route('create', {path: '/new'});
     this.route('show', {path: '/:activities_id'});
