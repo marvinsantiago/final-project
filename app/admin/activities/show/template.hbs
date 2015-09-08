@@ -1,0 +1,17 @@
+<div class='wrapper'>
+ <div class='activities-detail'>
+    <h2><a href="{{model.url}}">{{model.name}}</a></h2>
+
+    <p>{{model.location}}</p>
+    <p>{{model.phone}}</p>
+
+    {{#link-to 'admin.activities.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
+    <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-times'}}</a>
+</div>
+<div class='activities-image'>
+    <img src="/images/activities.gif" alt="Activities">
+</div>
+
+
+
+</div>

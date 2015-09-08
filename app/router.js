@@ -24,6 +24,19 @@ Router.map(function() {
     this.route('show', {path: '/:events_id'});
     this.route('edit', {path: '/:events_id/edit'});
   });
+
+this.route('admin', {path: '/admin'}, function() {
+  this.route('events', function() {
+      this.route('create', {path: '/new'});
+      this.route('show', {path: '/:events_id'});
+      this.route('edit', {path: '/:events_id/edit'});
+    });
+  this.route('activities', function() {
+    this.route('create', {path: '/new'});
+    this.route('show', {path: '/:activities_id'});
+    this.route('edit', {path: '/:activities_id/edit'});
+  });
+});
 });
 
 export default Router;
