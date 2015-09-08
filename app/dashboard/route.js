@@ -4,7 +4,9 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
     model: function() {
       return Ember.RSVP.hash ({
-        activities: this.store.findAll('activity'),
+        activities: this.store.find('activity', {
+          limitToLast: 5
+        }),
         events: this.store.findAll('event'),
         user: this.get('session.currentUser'),
       });
