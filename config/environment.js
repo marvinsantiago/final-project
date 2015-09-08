@@ -5,6 +5,9 @@ module.exports = function(environment) {
     proxyHost: 'http://mighty-lowlands-5553.herokuapp.com/',
     modulePrefix: 'final-project',
     environment: environment,
+    moment: {
+      includeTimezone: 'all'
+    },
     'simple-auth': {
       session: 'session:with-user',
       routeAfterAuthentication: 'dashboard',

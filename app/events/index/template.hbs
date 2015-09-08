@@ -15,9 +15,15 @@
 
 
 </div>
-{{!-- {{ember-calendar
-    eventsMode=eventsMode
-    gridMode='month'
-    allEvents=eventList
-}} --}}
+{{as-calendar
+  title="Ember Calendar"
+  occurrences=occurrences
+  showTimeZoneSearch=false
+  dayStartingTime="9:00"
+  dayEndingTime="18:00"
+  timeSlotDuration="00:30"
+  onAddOccurrence="calendarAddOccurrence"
+  onUpdateOccurrence="calendarUpdateOccurrence"
+  onRemoveOccurrence="calendarRemoveOccurrence"}}
+
 {{outlet}}
