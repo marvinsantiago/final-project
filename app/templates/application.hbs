@@ -10,13 +10,13 @@
     {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
+    <li> <a href="#" {{action 'invalidateSession'}}>Sign Out</a></li>
     {{else}}
     <li>{{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{link-to 'Login' 'login'}}</li>
     <li>{{link-to 'Signup' 'signup'}}</li>
-    <li>{{link-to 'Admin' 'admin'}}</li>
 
     {{/if}}
 </ul>

@@ -16,7 +16,7 @@
 
 html {
     // Cause calendar messes this up... :(
-    overflow: visible;
+    // overflow: visible;
 }
 
 body {
@@ -89,4 +89,12 @@ button {
 .activities-image {
     @include span-columns(12);
     text-align: center;
+}
+.events-detail {
+    @include span-columns(8);
+    padding: 20px;
+}
+.events-edit {
+    @include span-columns(8);
+    padding: 20px;
 }

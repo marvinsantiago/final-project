@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  actions: {
+    actions: {
     save: function(activity, data) {
       activity.setProperties(data);
 
-      activity.save().then(() => {this.transitionTo('admin.activities.show', activity);
+      activity.save().then(() => {this.transitionTo('activities.show', activity);
     });
     }
   }

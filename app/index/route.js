@@ -7,7 +7,7 @@ export default Ember.Route.extend({
         activities: this.store.find('activity', {
           limitToLast: 5
         }),
-        events: this.store.findAll('event'),
+        events: this.store.find('event'),
       });
   }
 });

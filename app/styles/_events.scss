@@ -1,6 +1,16 @@
 button {
     @include button(shiny, $maincolor);
 }
+.events-main {
+    @include span-columns(3);
+    overflow: auto;
+}
+.calendar {
+    @include span-columns(9);
+    @include omega();
+    overflow: auto;
+
+}
 .events-main ul, li {
         h3 {
             font-size: 1.1rem;

@@ -1,6 +1,10 @@
 <div class="activities-main">
 
-{{!-- <button>{{#link-to 'activities.create'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}</button> --}}
+{{#if session.isAuthenticated}}
+<button>{{#link-to 'activities.create'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}</button>
+{{else}}
+<button {{action 'redirectToLogin'}}>{{fa-icon 'fa-plus-circle'}}</button>
+{{/if}}
 
 <button>{{#link-to 'activities.index'(query-params category='Sports')}}Sports{{/link-to}}</button>
 <button>{{#link-to 'activities.index'(query-params category='Dance')}}Dance{{/link-to}}</button>

@@ -11,10 +11,11 @@
   height: 50px;
 }
 .site-footer {
-  background: $maincolor;
+
   text-align: center;
 
   ul {
+
     @include outer-container();
     height: 50px;
   }
