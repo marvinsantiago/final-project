@@ -1,7 +1,9 @@
 <div class="currentweather">
-<h2>RIGHT NOW</h2>
- {{sky-icon height="60" width="80" icon=weather.currently.icon color="black"}}
-    {{weather.currently.temperature}}&#8457;
+<h4>Current Weather</h4>
+<h3><span>{{sky-icon height="60" width="80" icon=weather.currently.icon color="black"}} -
+{{weather.currently.temperature}}&#8457;</span></h3>
+<h3>NEXT HOUR</h3>
+   <p>{{weather.minutely.summary}}</p>
 </div>
 
 {{outlet}}

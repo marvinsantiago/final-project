@@ -1,17 +1,20 @@
 button {
     @include button(shiny, $maincolor);
 }
+
+
 .events-main {
-    @include span-columns(3);
+    @include span-columns(2);
     overflow: auto;
     line-height: 2rem;
+
     li {
         border-bottom: 1px solid black;
 
     }
 }
 .calendar {
-    @include span-columns(9);
+    @include span-columns(10);
     @include omega();
     overflow: auto;
 

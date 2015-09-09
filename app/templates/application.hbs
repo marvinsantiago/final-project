@@ -7,12 +7,12 @@
 
     <ul>
     {{#if session.isAuthenticated}}
-    {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
+    {{#link-to 'dashboard'}}{{fa-icon 'fa-child'}} All Things Kid{{/link-to}}
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li> <a href="#" {{action 'invalidateSession'}}>Sign Out</a></li>
     {{else}}
-    <li>{{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}</li>
+    <li>{{#link-to 'index'}}{{fa-icon 'fa-child'}} All Things Kid{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{link-to 'Login' 'login'}}</li>
@@ -28,7 +28,7 @@
 
 <footer class="site-footer">
     <ul>
-        <li>{{fa-icon 'fa-copyright'}} Copyright 2015</li>
+        <li>{{fa-icon 'fa-copyright'}} Copyright 2015 - Marvin Santiago</li>
         <li><a href="https://twitter.com/">{{fa-icon 'fa-twitter'}}</a></li>
         <li><a href="https://instagram.com/">{{fa-icon 'fa-instagram'}}</a></li>
         <li><a href="#">{{fa-icon 'fa-github'}}</a></li>

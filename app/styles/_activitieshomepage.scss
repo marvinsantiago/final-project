@@ -19,7 +19,7 @@
     padding: 20px;
     border: 2px solid #e0e0e0;
     margin: 20px;
-
+    font-family: inherit;
     h4 {
         font-size: 2rem;
         font-weight: bold;
@@ -32,9 +32,22 @@
     }
 }
 .currentweather {
-    @include span-columns(2);
+    @include span-columns(3);
     @include omega();
     padding: 20px;
     border: 2px solid #e0e0e0;
     margin: 20px;
+    font-family: inherit;
+    h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-weight: bold;
+        span {
+            line-height: 50px;
+        }
+    }
 }
