@@ -1,8 +1,10 @@
-<div class="activities-list">
+<div class="activities-detail">
 {{!-- <div class='activities-image'>
     <img src="/images/activities.gif" alt="Activities">
 </div> --}}
+{{!-- {{#each categories as |category|}} --}}
 <ul>
+    <h2>{{category.name}}</h2>
 {{#each model as |activity|}}
     {{#unless activity.isNew}}
     <li>

@@ -25,6 +25,7 @@ Router.map(function() {
     this.route('edit', {path: '/:events_id/edit'});
   });
 
+  this.route('weather');
 });
 
 export default Router;

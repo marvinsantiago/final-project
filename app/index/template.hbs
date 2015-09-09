@@ -1,6 +1,6 @@
 
 <div class='activites'>
-    <h4>Popular Activities</h4>
+    <h4>{{#link-to 'activities'}}Popular Activities{{/link-to}}</h4>
     <ul>
         {{#each model.activities as |activity|}}
             <li>{{fa-icon 'fa-star-o'}} - {{activity.name}}</li>
@@ -9,13 +9,13 @@
 </div>
 
 <div class='events'>
-    <h6>Upcoming Events</h6>
+    <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
     <ul>
         {{#each model.events as |event|}}
             <li>{{event.title}}</li>
         {{/each}}
     </ul>
 </div>
-
+{{weather-view}}
 {{outlet}}
 

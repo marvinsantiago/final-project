@@ -7,8 +7,10 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
         activities: this.store.find('activity', {
           limitToLast: 5
         }),
-        events: this.store.findAll('event'),
+        events: this.store.findAll('event', {
+          orderBy: 'startsAt'
+        }),
         user: this.get('session.currentUser'),
       });
-  }
+    }
 });

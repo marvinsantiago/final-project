@@ -1,7 +1,7 @@
 
 
 .activites {
-    @include span-columns(7);
+    @include span-columns(4);
     border: 2px solid #e0e0e0;
     margin: 20px;
     padding: 20px;
@@ -20,8 +20,8 @@
     border: 1px solid #e0e0e0;
     margin: 20px;
 
-    h6 {
-        font-size: 1.1rem;
+    h4 {
+        font-size: 2rem;
         font-weight: bold;
         text-align: center;
         padding-bottom: 10px;
@@ -29,4 +29,11 @@
     ul li {
         font-size: 0.9rem;
     }
+}
+.currentweather {
+    @include span-columns(2);
+    @include omega();
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    margin: 20px;
 }
