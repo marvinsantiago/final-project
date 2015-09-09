@@ -1,9 +1,10 @@
-$maincolor: #acea88;
+$maincolor: #94c675;
 $mainfontcolor: #ffffff;
 $font: 'Jura', sans-serif;
+$background: #f2f7f2;
 
 body {
-    background-color: #f2f7f2;
+    background-color: $background;
 
 
     font-family: $font;

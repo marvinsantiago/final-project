@@ -1,6 +1,5 @@
 nav {
   background-color: $maincolor;
-  // background-image: linear-gradient(to bottom,#acea88 0%, #74b867 50%, #569f58 50%, #5da45a 100%);
 
   ul {
     @include outer-container();
@@ -17,9 +16,12 @@ nav {
   a {
     color: inherit;
     text-decoration: none;
-  }
-  a:hover {
-    background: darken($maincolor, 10%);
+    padding: 10px;
+
+    &:hover {
+      background-color: lighten($maincolor, 20%);
+    }
 
   }
+
 }

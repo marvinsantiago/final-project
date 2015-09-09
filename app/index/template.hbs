@@ -12,10 +12,10 @@
     <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
     <ul>
         {{#each model.events as |event|}}
-            <li>{{event.title}}</li>
+            <li>{{fa-icon 'fa-angle-double-right'}}{{event.title}}</li>
         {{/each}}
     </ul>
 </div>
-{{weather-view}}
+{{weather-view model}}
 {{outlet}}
 

@@ -1,15 +1,15 @@
-.page-wrap {
+.main {
   min-height: 100%;
-  // @include outer-container(980px);
+  @include outer-container();
   /* equal to footer height */
 
   margin-bottom: 200px;
 }
-.page-wrap:after {
+.main:after {
   content: "";
   display: block;
 }
-.site-footer, .page-wrap:after {
+.site-footer, .main:after {
   height: 50px;
 }
 .site-footer {
@@ -32,8 +32,11 @@
   a {
     color: inherit;
     text-decoration: none;
-  }
-  a:hover {
-    background: darken($maincolor, 10%);
+    padding: 10px;
+
+    &:hover {
+      background-color: lighten($maincolor, 20%);
+    }
+
   }
 }
