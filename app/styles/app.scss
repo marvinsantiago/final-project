@@ -87,6 +87,7 @@ button {
     @include span-columns(3);
     border: 5px solid #e0e0e0;
     text-align: center;
+    padding: 10px;
 }
 .activities-detail {
     @include span-columns(6);
