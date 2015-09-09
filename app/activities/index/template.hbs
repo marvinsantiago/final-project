@@ -1,20 +1,28 @@
-<div class="activities-detail">
+{{!-- <div class="activities-list"> --}}
 {{!-- <div class='activities-image'>
     <img src="/images/activities.gif" alt="Activities">
 </div> --}}
 {{!-- {{#each categories as |category|}} --}}
 <ul>
     <h2>{{category.name}}</h2>
+
+
+
 {{#each model as |activity|}}
+    <div class="activities-list">
     {{#unless activity.isNew}}
     <li>
     {{#link-to 'activities.show' activity}}
         <h3><a href="{{activity.url}}">{{activity.name}}</a></h3>
+        <p>{{activity.location}}</p>
+        <p>{{activity.phone}}</p>
     {{/link-to}}
     </li>
     {{/unless}}
+       </div>
 {{/each}}
 </ul>
-</div>
+{{!-- </div> --}}
+
 
 {{outlet}}
