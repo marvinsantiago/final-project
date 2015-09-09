@@ -17,6 +17,7 @@ module.exports = function(environment) {
       'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
       'font-src': "'self' fonts.gstatic.com",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+
      },
     firebase: 'https://ms-madaddox.firebaseio.com/',
     baseURL: '/',
