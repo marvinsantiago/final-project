@@ -6,15 +6,22 @@
     <p>{{model.phone}}</p>
     <p><a href="{{model.url}}">{{model.url}}</a></p>
 
-    {{disqus-comments identifier=model.id title=model.name}}
+
     {{#if session.isAuthenticated}}
     {{#link-to 'activities.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
     <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-times'}}</a>
     {{else}}
     {{/if}}
-
-
 </div>
+
+    <div class="activities-image">
+        <img src="/images/activities.gif" alt="activities">
+    </div>
+
+
+    <div class='comments'>
+            {{disqus-comments identifier=model.id title=model.name}}
+    </div>
 
 
 

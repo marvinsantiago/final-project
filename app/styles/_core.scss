@@ -2,10 +2,13 @@ $maincolor: #94c675;
 $mainfontcolor: #ffffff;
 $font: 'Jura', sans-serif;
 $background: #f2f7f2;
+$altbackround: #FFFFFF;
+$border: 2px solid #F2F7F2;
+
 
 body {
     background-color: $background;
-    margin: none;
+    // @include outer-container(1080px);
 
     font-family: $font;
 

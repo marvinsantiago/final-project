@@ -1,3 +1,8 @@
+{{#if session.isAuthenticated}}
+{{#link-to 'activities.create'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
+{{else}}
+{{#link-to 'login' action 'redirectToLogin'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
+{{/if}}
 {{#each categories.data as |category|}}
 {{#link-to 'activities.index' (query-params category=category) class="btn-header"}}{{category}}{{/link-to}}
 {{/each}}

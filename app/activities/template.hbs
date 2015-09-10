@@ -1,10 +1,6 @@
 <div class="activities-main">
 
-{{#if session.isAuthenticated}}
-{{#link-to 'activities.create' class="btn-header"}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
-{{else}}
-<button {{action 'redirectToLogin'}}>{{fa-icon 'fa-plus-circle'}}</button>
-{{/if}}
+
 
 {{activity-categories-links}}
 </div>
