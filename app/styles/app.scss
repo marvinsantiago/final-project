@@ -70,7 +70,6 @@ button {
 
 .activities-main {
     @include span-columns(12);
-    @include omega();
     margin: 10px 0;
     button {
         font-size: 0.9rem;
