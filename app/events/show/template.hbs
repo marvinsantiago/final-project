@@ -1,18 +1,18 @@
 <div class='events-detail'>
-    <h2>{{model.title}}</h2>
+    <p><h2>{{model.title}}</h2></p>
     <p>Location: {{model.location}}</p>
-    Date: {{model.startsAt}} - {{model.endsAt}}
+    <p>Date: {{moment-format model.startsAt 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.endsAt 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}}</p>
     <p>Price: {{model.price}} - <a href="{{model.url}}">{{model.url}}</a></p>
     <p>Description: {{model.description}}</p>
 
+    <div class='events-edit'>
+        {{#if session.isAuthenticated}}
+        {{#link-to 'events.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
+        <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-times'}}</a>
+        {{else}}
+        {{/if}}
+    </div>
 </div>
 
-<div class='events-edit'>
-    {{#if session.isAuthenticated}}
-    {{#link-to 'events.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
-    <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-times'}}</a>
-    {{else}}
-    {{/if}}
-</div>
 
 {{outlet}}

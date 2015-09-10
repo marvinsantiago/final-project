@@ -17,7 +17,7 @@ button {
     @include span-columns(9);
     @include omega();
     font-size: 0.8rem;
-    // overflow: auto;
+    overflow: auto;
 
 }
 .events-main ul, li {

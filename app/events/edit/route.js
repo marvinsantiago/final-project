@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    actions: {
+  actions: {
     save: function(event, data) {
       event.setProperties(data);
 

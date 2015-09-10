@@ -2,7 +2,7 @@
     <h4>{{#link-to 'activities'}}Popular Activities{{/link-to}}</h4>
     <ul>
         {{#each model.activities as |activity|}}
-            <li>{{fa-icon 'fa-star-o'}} - {{activity.name}}</li>
+            <li>{{#link-to 'activities'}}{{fa-icon 'fa-star-o'}} - {{activity.name}}{{/link-to}}</li>
         {{/each}}
     </ul>
 </div>
@@ -11,7 +11,7 @@
     <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
     <ul>
         {{#each model.events as |event|}}
-            <li>{{fa-icon 'fa-angle-double-right'}}{{event.title}}</li>
+            <li>{{#link-to 'events'}}{{fa-icon 'fa-angle-double-right'}} {{event.title}}{{/link-to}}</li>
         {{/each}}
     </ul>
 </div>

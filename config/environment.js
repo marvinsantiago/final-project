@@ -8,6 +8,9 @@ module.exports = function(environment) {
     moment: {
       includeTimezone: 'all'
     },
+    disqus: {
+      shortname: 'allthingskid'
+    },
     'simple-auth': {
       session: 'session:with-user',
       routeAfterAuthentication: 'dashboard',

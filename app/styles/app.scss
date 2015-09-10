@@ -19,8 +19,8 @@ html {
     // overflow: visible;
 }
 
-body {
-
+html, body {
+    overflow: initial;
 }
 .main {
     @include outer-container(980px);
@@ -33,7 +33,7 @@ button {
 
 #form {
     @include outer-container(400px);
-    margin-top: 20px;
+    // margin-top: 20px;
     border: 5px solid #e0e0e0;
     padding: 20px;
     a {
@@ -60,6 +60,7 @@ button {
 }
 .activity-form label, input {
     @include span-columns(12);
+
     #save {
         @include span-columns(12);
 
@@ -91,6 +92,13 @@ button {
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+    a {
+        padding: 5px;
+    }
+    a:hover {
+        background: none;
+        text-decoration: underline;
+    }
 
 }
 .activities-detail {
@@ -112,8 +120,8 @@ button {
     text-align: center;
 }
 .events-detail {
-    @include span-columns(6);
-    @include shift(2);
+    @include span-columns(12);
+    // @include shift(2);
     padding: 20px;
     margin-top: 50px;
 

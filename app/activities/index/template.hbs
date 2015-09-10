@@ -12,11 +12,12 @@
     <div class="activities-list">
     {{#unless activity.isNew}}
     <li>
-{{!--     {{#link-to 'activities.show' activity}} --}}
-        <h3><a href="{{activity.url}}">{{activity.name}}</a></h3>
+    {{#link-to 'activities.show' activity}}
+        <p>{{activity.name}}</p>
+    {{/link-to}}
         <p>{{activity.location}}</p>
         <p>{{activity.phone}}</p>
-{{!--     {{/link-to}} --}}
+
     </li>
     {{/unless}}
        </div>
