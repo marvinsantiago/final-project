@@ -1,0 +1,3 @@
+{{#each categories.data as |category|}}
+{{#link-to 'activities.index' (query-params category=category) class="btn-header"}}{{category}}{{/link-to}}
+{{/each}}

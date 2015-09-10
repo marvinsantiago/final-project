@@ -13,9 +13,5 @@ export default Ember.Component.extend({
       var data = this.getProperties('name', 'category', 'location', 'phone', 'url');
       this.sendAction('save', this.get('activity'), data);
     },
-    selectionsChanged: function() {
-      var selectCategory = this.getProperties('category');
-      this.sendAction('selectionsChanged', this.get('activity'), selectCategory);
-    },
   }
 });

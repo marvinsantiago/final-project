@@ -4,7 +4,7 @@
   {{input type='text' value=name}}
 
 <label for="activity-category">Category</label>
-{{#x-select value=activity.category action="selectionsChanged"}}
+{{#x-select value=category}}
     <option>Please Select a Category...</option>
     {{#each categories.data as |category|}}
         {{#x-option value=category}}{{category}}{{/x-option}}

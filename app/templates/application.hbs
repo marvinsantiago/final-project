@@ -5,7 +5,7 @@
     <ul>
     {{#if session.isAuthenticated}}
     <li>{{#link-to 'dashboard'}}Home{{/link-to}}</li>
-    <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
+    <li>{{#link-to 'activities' (query-params category=null)}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li> <a href="#" {{action 'invalidateSession'}}>Sign Out</a></li>
     {{else}}
