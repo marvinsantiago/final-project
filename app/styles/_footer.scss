@@ -1,42 +1,32 @@
-.main {
-  // min-height: 100%;
-  @include outer-container(980px);
-  /* equal to footer height */
 
-  // margin-bottom: 200px;
-}
-.main:after {
-  content: "";
-  display: block;
-}
-.site-footer, .main:after {
-  height: 50px;
-}
-.site-footer {
+// .site-footer {
+//   height: 30px;
+// }
+// .site-footer {
 
-  text-align: center;
+//   text-align: center;
 
-  ul {
+//   ul {
 
-    @include outer-container();
-    height: 50px;
-  }
+//     @include outer-container();
+//     height: 50px;
+//   }
 
-  li {
-    display: inline-block;
-    line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+//   li {
+//     display: inline-block;
+//     line-height: 50px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    padding: 10px;
+//   a {
+//     color: inherit;
+//     text-decoration: none;
+//     padding: 10px;
 
-    &:hover {
-      background-color: lighten($maincolor, 20%);
-    }
+//     &:hover {
+//       background-color: lighten($maincolor, 20%);
+//     }
 
-  }
-}
+//   }
+// }

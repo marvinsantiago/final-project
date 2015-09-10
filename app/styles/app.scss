@@ -20,14 +20,11 @@ html {
 }
 
 body {
-    // height: 100%;
-}
-fa {
 
 }
-img {
-    height: 400px;
-    weight: 400px;
+.main {
+    @include outer-container(980px);
+
 }
 button {
     @include button($maincolor);
@@ -41,6 +38,24 @@ button {
     padding: 20px;
     a {
         text-decoration: underline;
+    }
+}
+.login-form label, input {
+    @include span-columns(12);
+    padding: 10px;
+    #save {
+        @include span-columns(12);
+    }
+}
+.login-form p {
+        padding-top: 20px;
+    }
+.signup-form label, input {
+    @include span-columns(12);
+    padding: 10px;
+    #save {
+        @include span-columns(12);
+
     }
 }
 .activity-form label, input {

@@ -4,7 +4,7 @@ button {
 
 
 .events-main {
-    @include span-columns(2);
+    @include span-columns(3);
     overflow: auto;
     line-height: 2rem;
 
@@ -14,14 +14,15 @@ button {
     }
 }
 .calendar {
-    @include span-columns(10);
+    @include span-columns(9);
     @include omega();
-    overflow: auto;
+    font-size: 0.8rem;
+    // overflow: auto;
 
 }
 .events-main ul, li {
         h3 {
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             font-weight: bold;
         }
 

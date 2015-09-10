@@ -1,18 +1,15 @@
+<div class="main">
+<header>
+    <h1>{{fa-icon 'fa-child'}} All Things Kid</h1><p>Local Guide For After-School Activites and Events</p>
 <nav>
-{{!--     {{#if session.isAuthenticated}}
-    {{#link-to 'dashboard'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
-    {{else}}
-    {{#link-to 'index'}}{{fa-icon 'fa-home'}}After-School Activities{{/link-to}}
-    {{/if}} --}}
-
     <ul>
     {{#if session.isAuthenticated}}
-    {{#link-to 'dashboard'}}{{fa-icon 'fa-child'}} All Things Kid{{/link-to}}
+    <li>{{#link-to 'dashboard'}}Home{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li> <a href="#" {{action 'invalidateSession'}}>Sign Out</a></li>
     {{else}}
-    <li>{{#link-to 'index'}}{{fa-icon 'fa-child'}} All Things Kid{{/link-to}}</li>
+    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
     <li>{{#link-to 'activities'}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
     <li>{{link-to 'Login' 'login'}}</li>
@@ -20,19 +17,25 @@
     {{/if}}
 </ul>
 </nav>
+</header>
+
 {{!-- <div class="background"></div> --}}
-<div class="main">
+<div class='main'>
     {{outlet}}
 </div>
 
-<footer class="site-footer">
+
+
+{{!-- <footer>
     <ul>
         <li>{{fa-icon 'fa-copyright'}} Copyright 2015 - Marvin Santiago</li>
         <li><a href="https://twitter.com/">{{fa-icon 'fa-twitter'}}</a></li>
         <li><a href="https://instagram.com/">{{fa-icon 'fa-instagram'}}</a></li>
         <li><a href="#">{{fa-icon 'fa-github'}}</a></li>
     </ul>
-</footer>
+</footer> --}}
+
+</div>
 
 
 
