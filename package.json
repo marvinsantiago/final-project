@@ -58,6 +58,7 @@
     "ember-new-computed": "1.0.3",
     "ember-radio-button": "1.0.7",
     "ember-simple-auth-firebase-user-session": "0.2.1",
-    "emberfire": "1.5.0"
+    "emberfire": "1.5.0",
+    "emberx-select": "2.0.1"
   }
 }
