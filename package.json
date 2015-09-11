@@ -36,6 +36,7 @@
     "ember-cli-materialize": "0.18.4",
     "ember-cli-meyer-reset-sass": "0.0.5",
     "ember-cli-moment-shim": "0.6.2",
+    "ember-cli-moment-transform": "0.2.0",
     "ember-cli-neat": "0.0.5",
     "ember-cli-paint": "1.12.1",
     "ember-cli-qunit": "^1.0.0",
