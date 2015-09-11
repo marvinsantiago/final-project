@@ -6,7 +6,7 @@ module.exports = function(environment) {
     modulePrefix: 'final-project',
     environment: environment,
     moment: {
-      includeTimezone: 'all'
+      noGlobal: true
     },
     disqus: {
       shortname: 'allthingskid'
