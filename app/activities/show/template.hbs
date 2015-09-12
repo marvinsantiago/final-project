@@ -1,5 +1,5 @@
-
- <div class='activities-detail'>
+<div class="section">
+  <div class='activities-detail'>
     <h2>{{model.name}}</h2>
 
     <p>{{model.location}}</p>
@@ -14,14 +14,18 @@
     {{/if}}
 </div>
 
-    <div class="activities-image">
+{{!--     <div class="activities-image">
         <img src="/images/activities.gif" alt="activities">
-    </div>
+    </div> --}}
 
 
     <div class='comments'>
             {{disqus-comments identifier=model.id title=model.name}}
     </div>
+
+    {{outlet}}
+</div>
+
 
 
 

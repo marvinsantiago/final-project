@@ -1,7 +1,7 @@
 {{#if session.isAuthenticated}}
-{{#link-to 'activities.create'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
+{{#link-to 'activities.create' class="btn-header"}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
 {{else}}
-{{#link-to 'login' action 'redirectToLogin'}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
+{{#link-to 'login' class="btn-header" action='redirectToLogin'}}{{fa-icon 'fa-plus-circle'}} Add New{{/link-to}}
 {{/if}}
 {{#each categories.data as |category|}}
 {{#link-to 'activities.index' (query-params category=category) class="btn-header"}}{{category}}{{/link-to}}

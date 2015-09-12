@@ -2,7 +2,7 @@ header {
   background-color: $maincolor;
   // text-align: center;
   display: block;
-  height: 90px;
+  height: 100px;
 }
 h1 {
   font-size: 2rem;
@@ -17,16 +17,17 @@ p {
 nav, footer {
   clear: both;
   background-color: lighten($maincolor, 10%);
-  height: 50px;
+  height: 40px;
 }
 
 nav ul, footer ul {
-  padding: 5px 0px 5px 30px;
+  padding: 5px 0px 10px 30px;
 }
 
 nav li, footer li {
     display: inline;
     margin-right: 40px;
+    font-size: 1.1rem;
 
   }
 

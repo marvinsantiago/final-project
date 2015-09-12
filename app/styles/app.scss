@@ -1,4 +1,4 @@
-@import 'addons/ember-calendar/main';
+// @import 'addons/ember-calendar/main';
 @import 'reset';
 @import "bourbon";
 @import "neat";
@@ -37,8 +37,8 @@ button {
 }
 
 #form {
-    @include outer-container(400px);
-    // margin-top: 20px;
+    @include span-columns(4);
+    @include shift(3);
     border: 5px solid #e0e0e0;
     padding: 20px;
     a {
@@ -80,27 +80,47 @@ button {
 }
 .activities-main {
     @include span-columns(12);
-    margin: 10px 0;
-    button {
-        font-size: 0.9rem;
-    }
-    // h2 {
-    //     font-size: 1rem;
-    //     font-weight: bold;
-    //     padding-bottom: 8px;
-    //     font-family: inherit;
-    // }
+    padding: 0 10px;
+    margin: 20px 0;
+}
+.btn-header {
+    border: 1px solid #999;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
 }
 .activities-list {
-    @include span-columns(4);
+    @include span-columns(12);
     @include omega();
-    border: 2px solid #e0e0e0;
-    text-align: center;
     overflow: auto;
+    font-family: inherit;
+    table {
+        @include span-columns(8);
+        @include shift(2);
+        padding: 20px 0;
+    }
+    th, td {
+        padding: 7px 10px 10px;
+    }
+    th {
+        text-transform: uppercase;
+        border-bottom: 2px solid #111111;
+        border-top: 1px solid #999;
+        text-align: center;
+    }
+    tr {
+        text-align: center;
+    }
+    tr:nth-of-type(even) {
+        background: #efefef;
+    }
+    tr:last-of-type {
+        margin-bottom: 20px;
+    }
 
 
     a {
-        padding: 5px;
+
     }
     a:hover {
         background: none;
@@ -108,31 +128,37 @@ button {
     }
 
 }
-.activities-detail {
-    @include span-columns(6);
-    min-height: 288px;
+.section {
+    @include span-columns(12);
+    margin-bottom: 20px;
 
-    border: 3px solid #F2F7F2;
-    line-height: 2rem;
-    text-align: center;
-    h2 {
-        font-size: 1.5rem;
-        font-style: inherit;
-        padding: 20px 0;
-    }
-}
-.activities-image {
-    @include span-columns(6);
-    @include omega();
-    border: 3px solid #F2F7F2;
-        img {
-            max-width: 100%;
+
+    .activities-detail {
+        @include span-columns(5);
+        @include shift(1);
+        min-height: 288px;
+
+        border: 3px solid #F2F7F2;
+        line-height: 2rem;
+        text-align: center;
+        h2 {
+            font-size: 1.5rem;
+            font-style: inherit;
+            padding: 20px 0;
         }
-
     }
-.comments {
-    padding-top: 20px;
-    border-top: 2px solid #e0e0e0;
+    // .activities-image {
+    //     @include span-columns(7);
+    //     @include omega();
+    //     border: 3px solid #F2F7F2;
+    //         img {
+    //             max-width: 100%;
+    //         }
+
+    //     }
+        .comments {
+            padding-top: 50px;
+        }
 }
 .events-detail {
     @include span-columns(12);

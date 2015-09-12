@@ -3,26 +3,33 @@
     <img src="/images/activities.gif" alt="Activities">
 </div> --}}
 {{!-- {{#each categories as |category|}} --}}
-<ul>
+
     <h2>{{category.name}}</h2>
 
 
 
-{{#each model as |activity|}}
     <div class="activities-list">
-    {{#unless activity.isNew}}
-    <li>
-    {{#link-to 'activities.show' activity}}
-        <p>{{activity.name}}</p>
-    {{/link-to}}
-        <p>{{activity.location}}</p>
-        <p>{{activity.phone}}</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
 
-    </li>
-    {{/unless}}
+        {{#each model as |activity|}}
+        <tr>
+        {{#unless activity.isNew}}
+        <td>{{#link-to 'activities.show' activity}}<p>{{activity.name}}</p>
+        {{/link-to}}</td>
+        <td><p>{{activity.location}}</p></td>
+        <td><p>{{activity.phone}}</p></td>
+        {{/unless}}
+        </tr>
+        {{/each}}
+
+    </table>
        </div>
-{{/each}}
-</ul>
+
 {{!-- </div> --}}
 
 
