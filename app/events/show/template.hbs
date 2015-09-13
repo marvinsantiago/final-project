@@ -1,8 +1,9 @@
 <div class='events-detail'>
     <p><h2>{{model.title}}</h2></p>
     <p>Location: {{model.location}}</p>
-    <p>Date: {{moment-format model.start 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.end 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}}</p>
-    <p>Price: {{model.price}} - <a href="{{model.url}}">{{model.url}}</a></p>
+    <p>Date: {{moment-format model.start 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.end 'hh:mm A' 'YYYY-MM-DD hh:mm'}}</p>
+    <p>Price: {{model.price}}</p>
+    <p>Website: <a href="{{model.url}}">{{model.url}}</a></p>
     <p>Description: {{model.description}}</p>
 
     <div class='events-edit'>

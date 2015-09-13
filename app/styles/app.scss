@@ -31,18 +31,23 @@ html, body {
 img {
     max-height: 100%;
 }
-button {
-    @include button($maincolor);
-    font-family: inherit;
-}
+
 
 #form {
-    @include span-columns(4);
-    @include shift(3);
+    @include span-columns(6);
+    @include shift(6);
     border: 5px solid #e0e0e0;
     padding: 20px;
+    margin: 50px 0;
     a {
         text-decoration: underline;
+    }
+    button {
+        border: 1px solid #F2F7F2;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 0.9rem;
+        background: $maincolor;
     }
 }
 .login-form label, input {
@@ -55,6 +60,9 @@ button {
 .login-form p {
         padding-top: 20px;
     }
+.login-form input:last-of-type, .signup-form input:last-of-type  {
+    margin-bottom: 20px;
+}
 .signup-form label, input {
     @include span-columns(12);
     padding: 10px;
@@ -84,10 +92,11 @@ button {
     margin: 20px 0;
 }
 .btn-header {
-    border: 1px solid #999;
+    border: 1px solid #F2F7F2;
     padding: 5px;
     border-radius: 3px;
     font-size: 0.9rem;
+    background: #F2F7F2;
 }
 .activities-list {
     @include span-columns(12);
@@ -137,8 +146,8 @@ button {
         @include span-columns(5);
         @include shift(1);
         min-height: 288px;
-
-        border: 3px solid #F2F7F2;
+        background: #F2F7F2;
+        border-radius: 3px;
         line-height: 2rem;
         text-align: center;
         h2 {
@@ -157,7 +166,9 @@ button {
 
     //     }
         .comments {
-            padding-top: 50px;
+            @include span-columns(8);
+            margin: 80px 0;
+            padding-left: 100px;
         }
 }
 .events-detail {

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   events: Ember.computed.map('model', function(curr) {
-    return curr.getProperties('title', 'start', 'end');
+    return curr.getProperties('start', 'title');
   }),
 
   actions: {

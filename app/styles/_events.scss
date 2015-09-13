@@ -1,7 +1,3 @@
-button {
-    @include button(shiny, $maincolor);
-}
-
 
 .events-main {
     @include span-columns(2);
