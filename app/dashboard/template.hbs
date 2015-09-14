@@ -1,4 +1,5 @@
 <section>
+<div class="section-left">
 
   <div class='activites grid-example col s12 m6'>
     <h4>{{#link-to 'activities'}}Popular Activities{{/link-to}}</h4>
@@ -7,19 +8,27 @@
             <li>{{#link-to 'activities.show' activity}}{{fa-icon 'fa-star-o'}} - {{activity.name}}{{/link-to}}</li>
         {{/each}}
     </ul>
+    </div>
+
+
+
 </div>
 
-<div class='events grid-example col s12 m6'>
-    <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
-    <ul>
-        {{#each model.events as |event|}}
-            <li>{{#link-to 'events'}}{{fa-icon 'fa-angle-double-right'}} {{event.title}}{{/link-to}}</li>
-        {{/each}}
-    </ul>
-</div>
+<div class="section-right">
 {{weather-view weather}}
-{{outlet}}
+        <div class='events grid-example col s12 m6'>
+            <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
+            <ul>
+                {{#each model.events as |event|}}
+                    <li>{{#link-to 'events'}}{{fa-icon 'fa-angle-double-right'}} {{event.title}}{{/link-to}}</li>
+                {{/each}}
+            </ul>
+            </div>
+
+</div>
+        {{outlet}}
 </section>
+
 
 
 

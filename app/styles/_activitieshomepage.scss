@@ -3,61 +3,85 @@
     // @include media(700px) {
     //     @include span-columns(6);
     // }
+section {
+    @include span-columns(12);
+    padding: 0 2%;
 
-.activites {
-    @include span-columns(2);
+    .section-left {
+        @include span-columns(9);
 
-    border: 2px solid #e0e0e0;
-    margin: 20px 0;
-    padding: 15px;
-    font-family: inherit;
+    .activites {
+        @include span-columns(4);
 
-    h4 {
-        font-size: 2rem;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-    ul li {
-        padding-bottom: 8px;
-        line-height: 25px;
-    }
-}
-.events {
-    @include span-columns(2);
-    padding: 15px 5px;
-    margin: 20px 0;
-    border: 2px solid #e0e0e0;
-    font-family: inherit;
-    h4 {
-        font-size: 2rem;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-    ul li {
-        font-size: 0.9rem;
-        padding-bottom: 8px;
-        line-height: 25px;
-    }
-}
-.currentweather {
-    @include span-columns(2);
-    @include omega();
-    padding: 15px;
-    border: 2px solid #e0e0e0;
-    margin: 20px 0;
-    font-family: inherit;
-    h4 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        // text-align: center;
-        padding-bottom: 10px;
-    }
-    h3 {
-        font-weight: bold;
-        span {
-            line-height: 50px;
+        background: $background;
+        border-radius: 5px;
+
+        // border: 2px solid #e0e0e0;
+        margin: 20px 0;
+        padding: 15px;
+        font-family: inherit;
+
+        h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        ul li {
+            padding-bottom: 8px;
+            line-height: 25px;
         }
     }
+}
+
+.section-right {
+    @include span-columns(3);
+
+
+
+
+    .currentweather {
+        @include span-columns(12);
+        @include omega();
+        background: $background;
+        padding: 15px;
+        border-radius: 5px;
+        // border: 2px solid #e0e0e0;
+        margin: 20px 0;
+        font-family: inherit;
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            // text-align: center;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-weight: bold;
+            span {
+                line-height: 50px;
+            }
+        }
+    }
+        .events {
+        @include span-columns(12);
+        background: $background;
+        padding: 15px 5px;
+        margin: 20px 0;
+        // border: 2px solid #e0e0e0;
+        border-radius: 5px;
+        font-family: inherit;
+        h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        ul li {
+            font-size: 0.9rem;
+            padding-bottom: 8px;
+            line-height: 25px;
+        }
+    }
+}
 }
 // }
 
