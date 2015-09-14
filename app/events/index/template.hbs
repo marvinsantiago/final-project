@@ -9,14 +9,12 @@
     <li>{{#link-to 'events.create' class="btn-header"}}{{fa-icon 'fa-calendar-plus-o'}} New event{{/link-to}}</li>
     {{else}}
     {{/if}}
-    {{#each model as |event|}}
-        {{#unless event.isNew}}
-        <li>
+    {{#each upcomingEvents as |event|}}
+      <li>
         <h3>{{event.title}}</h3>
         <p>{{event.date}}</p>
         {{#link-to 'events.show' event}}Event Details{{/link-to}}
-        </li>
-        {{/unless}}
+      </li>
     {{/each}}
     </ul>
 

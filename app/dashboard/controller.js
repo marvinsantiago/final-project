@@ -2,11 +2,8 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Controller.extend({
-  events: Ember.computed.map('model', function(curr) {
-    return curr.getProperties('start', 'end', 'title');
-  }),
 
-  upcomingEvents: Ember.computed.filter('model', function(curr) {
+  upcomingEvents: Ember.computed.filter('model.events', function(curr) {
     var date = curr.get('end');
     var now = moment();
 
