@@ -14,15 +14,16 @@
             <th>Name</th>
             <th>Address</th>
             <th>Phone</th>
+            <th>Website</th>
         </tr>
 
         {{#each model as |activity|}}
         <tr>
         {{#unless activity.isNew}}
-        <td>{{#link-to 'activities.show' activity}}<p>{{activity.name}}</p>
-        {{/link-to}}</td>
+        <td><p>{{activity.name}}</p></td>
         <td><p>{{activity.location}}</p></td>
         <td><p>{{activity.phone}}</p></td>
+        <td><p><a href="{{activity.url}}">{{activity.url}}</a></p></td>
         {{/unless}}
         </tr>
         {{/each}}
