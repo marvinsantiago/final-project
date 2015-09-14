@@ -1,25 +1,25 @@
 <div id="form">
 <form class="event-form" {{action 'save' on='submit'}}>
 <label for="event-title">Title</label>
-  {{input type='text' value=title}}
+  {{input type='text' value=title required=true}}
 
 <label for="event-location">Location</label>
-  {{input type='text' value=location}}
+  {{input type='text' value=location required=true}}
 
 <label for="event-date">Event Start Date</label>
-  {{input type='text' placeholder='ex: 2015-09-09 09:00' value=start}}
+  {{input type='text' placeholder='ex: 2015-09-09 09:00' value=start required=true}}
 
 <label for="event-price">Event End Date</label>
-  {{input type='text' placeholder='ex: 2015-09-09 17:00' value=end}}
+  {{input type='text' placeholder='ex: 2015-09-09 17:00' value=end required=true}}
 
 <label for="event-url">Website</label>
-  {{input type='text' value=url}}
+  {{input type='text' value=url required=true}}
 
 <label for="event-price">Price</label>
   {{input type='text' value=price}}
 
 <label for="event-description">Description</label>
-  {{input type='text' value=description}}
+  {{input type='text' value=description required=true}}
 
     <button type='submit'>Save</button>
 </form>

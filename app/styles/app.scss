@@ -27,6 +27,7 @@ html, body {
     @include outer-container(1080px);
 
     background-color: $altbackround;
+
 }
 
 img {
@@ -37,7 +38,7 @@ img {
 #form {
     @include span-columns(12);
     padding: 0 30px;
-    .login-form, .signup-form {
+    .login-form, .signup-form, .event-form, .activity-form {
     @include span-columns(4);
     @include shift(6);
     border: 5px solid #e0e0e0;
@@ -54,10 +55,20 @@ img {
         background: $maincolor;
     }
     }
+    .event-form {
+        @include span-columns(12);
+    }
+    .activity-form {
+        @include span-columns(6);
+    }
+    // .image {
+    //     @include span-columns(8);
+    // }
 }
-.login-form label, input {
+.login-form label, input, .signup-form label, input, .event-form label, input, .activity-form label, input, select{
     @include span-columns(12);
     padding: 10px;
+
     #save {
         @include span-columns(12);
     }
@@ -65,7 +76,7 @@ img {
 .login-form p {
         padding-top: 20px;
     }
-.login-form input:last-of-type, .signup-form input:last-of-type  {
+.login-form input:last-of-type, .signup-form input:last-of-type, .activity-form input:last-of-type, .event-form input:last-of-type  {
     margin-bottom: 20px;
 }
 .signup-form label, input {
@@ -76,13 +87,14 @@ img {
 
     }
 }
-.activity-form label, input {
+.activity-form label, input, select {
     @include span-columns(12);
 
-    #save {
-        @include span-columns(12);
 
-    }
+    // #save {
+    //     @include span-columns(12);
+
+    // }
 }
 
 .event-form label, input {

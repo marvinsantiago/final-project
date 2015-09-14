@@ -10,8 +10,41 @@ section {
     .section-left {
         @include span-columns(9);
 
+        .image {
+            @include span-columns(12);
+
+            img {
+                min-height: 300px;
+            }
+        }
+
+    // .activites {
+    //     @include span-columns(4);
+
+    //     background: $background;
+    //     border-radius: 5px;
+
+    //     // border: 2px solid #e0e0e0;
+    //     margin: 20px 0;
+    //     padding: 15px;
+    //     font-family: inherit;
+
+    //     h4 {
+    //         font-size: 2rem;
+    //         font-weight: bold;
+    //         padding-bottom: 10px;
+    //     }
+    //     ul li {
+    //         padding-bottom: 8px;
+    //         line-height: 18px;
+    //     }
+    // }
+}
+
+.section-right {
+    @include span-columns(3);
     .activites {
-        @include span-columns(4);
+        @include span-columns(12);
 
         background: $background;
         border-radius: 5px;
@@ -28,14 +61,9 @@ section {
         }
         ul li {
             padding-bottom: 8px;
-            line-height: 25px;
+            line-height: 18px;
         }
     }
-}
-
-.section-right {
-    @include span-columns(3);
-
 
 
 
@@ -78,7 +106,7 @@ section {
         ul li {
             font-size: 0.9rem;
             padding-bottom: 8px;
-            line-height: 25px;
+            line-height: 18px;
         }
     }
 }

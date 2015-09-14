@@ -1,6 +1,7 @@
 
 .events-main {
     @include span-columns(2);
+    padding: 0 10px;
     overflow: auto;
     line-height: 2rem;
 
@@ -12,6 +13,7 @@
 .calendar {
     @include span-columns(10);
     @include omega();
+    padding: 10px;
     font-size: 0.8rem;
     overflow: auto;
 
