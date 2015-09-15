@@ -53,6 +53,8 @@ section {
     @include media($mobile) {
         @include span-columns(12);
 
+        text-align: center;
+
     }
     .activites {
         @include span-columns(12);
@@ -60,7 +62,7 @@ section {
         background: $background;
         border-radius: 5px;
 
-        // border: 2px solid #e0e0e0;
+        text-align: center;
         margin: 20px 0;
         padding: 15px;
         font-family: inherit;
@@ -84,9 +86,10 @@ section {
         background: $background;
         padding: 15px;
         border-radius: 5px;
-        // border: 2px solid #e0e0e0;
+
         margin: 20px 0;
         font-family: inherit;
+        text-align: center;
 
         h4 {
             font-size: 1.8rem;
@@ -94,11 +97,17 @@ section {
             // text-align: center;
             padding-bottom: 10px;
         }
+        p {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
         h3 {
             font-weight: bold;
-            span {
-                line-height: 50px;
-            }
+            font-size: 1.2rem;
+            padding-bottom: 10px;
+        }
+        p:last-of-type {
+            font-size: 1.1rem;
         }
     }
         .events {
@@ -106,7 +115,7 @@ section {
         background: $background;
         padding: 15px 5px;
         margin: 20px 0;
-        // border: 2px solid #e0e0e0;
+        text-align: center;
         border-radius: 5px;
         font-family: inherit;
         h4 {

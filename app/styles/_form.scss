@@ -1,13 +1,13 @@
 #form {
     @include span-columns(12);
-    padding: 0 30px;
+    padding: 0 50px;
 
     @include media($mobile) {
         @include span-columns(12);
     }
     .login-form, .signup-form, .event-form, .activity-form {
-    @include span-columns(4);
-    @include shift(6);
+    @include span-columns(6);
+    // @include shift(6);
     border: 5px solid #e0e0e0;
     padding: 20px;
     margin: 50px 0;
@@ -24,6 +24,7 @@
         border-radius: 3px;
         font-size: 0.9rem;
         background: $maincolor;
+        font-family: inherit;
     }
     }
     .event-form {
@@ -36,9 +37,13 @@
             @include span-columns(12);
         }
     }
-    // .image {
-    //     @include span-columns(8);
-    // }
+    .image {
+        @include span-columns(6);
+        @include omega();
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+    }
 }
 .login-form label, input, .signup-form label, input, .event-form label, input, .activity-form label, input, select{
     @include span-columns(12);

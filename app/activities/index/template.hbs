@@ -7,29 +7,31 @@
     <h2>{{category.name}}</h2>
 
 
+<div class="activities-main">
 
-    <div class="activities-list">
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Website</th>
-        </tr>
+        <div class="activities-list">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
 
-        {{#each model as |activity|}}
-        <tr>
-        {{#unless activity.isNew}}
-        <td><p>{{activity.name}}</p></td>
-        <td><p>{{activity.location}}</p></td>
-        <td><p>{{activity.phone}}</p></td>
-        <td><p><a href="{{activity.url}}">{{activity.url}}</a></p></td>
-        {{/unless}}
-        </tr>
-        {{/each}}
+            {{#each model as |activity|}}
+            <tr>
+            {{#unless activity.isNew}}
+            <td><p>{{activity.name}}</p></td>
+            <td><p>{{activity.location}}</p></td>
+            <td><p>{{activity.phone}}</p></td>
+            <td><p><a href="{{activity.url}}">{{activity.url}}</a></p></td>
+            {{/unless}}
+            </tr>
+            {{/each}}
 
-    </table>
-       </div>
+        </table>
+           </div>
+</div>
 
 {{!-- </div> --}}
 

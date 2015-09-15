@@ -31,24 +31,32 @@ nav, footer {
 }
 
 nav ul, footer ul {
-  padding: 5px 0px 10px 30px;
+  padding: 10px 0px 5px 30px;
     @include media($mobile) {
       padding: 10px 0px 5px 30px;
   }
 }
 
-
+nav li {
+  font-size: 1.1rem;
+}
 
 nav li, footer li {
     display: inline;
     margin-right: 40px;
-    font-size: 1.1rem;
+
 
     @include media($mobile) {
       font-size: 0.8rem;
 
     }
 
+  }
+  footer li {
+    font-size: 1rem;
+    @include media($mobile) {
+      font-size: 0.8rem;
+    }
   }
 
 a {
