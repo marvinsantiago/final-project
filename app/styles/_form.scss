@@ -26,6 +26,10 @@
         background: $maincolor;
         font-family: inherit;
     }
+    select {
+        font-family: inherit;
+        font-size: 0.9rem;
+    }
     }
     .event-form {
         @include span-columns(12);
@@ -69,6 +73,7 @@
 }
 .activity-form label, input, select {
     @include span-columns(12);
+
 
 
     // #save {

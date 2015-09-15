@@ -2,10 +2,17 @@
     @include span-columns(12);
     padding: 0 10px;
     margin: 10px 0;
+    .categoriesDropdown {
+        visibility: hidden;
+    }
 
     @include media($mobile) {
         @include span-columns(12);
-    }
+        .categoriesDropdown {
+            visibility: visible;
+            margin: none;
+        }
+}
 
 .btn-header {
     border: 1px solid #F2F7F2;
@@ -15,6 +22,7 @@
     background: #F2F7F2;
     @include media($mobile) {
         font-size: 0.7rem;
+        visibility: hidden;
     }
 
 }

@@ -7,6 +7,10 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
       this.get('session').close().then(() => {
         this.transitionTo('index');
       });
+    },
+    sessionRequiresAuthentication: function() {
+      this._super();
+      alert('You must be logged in to perform this action');
     }
   }
 });

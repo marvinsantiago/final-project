@@ -1,14 +1,10 @@
 <div class="activities-main">
-
-    {{#if session.isAuthenticated}}
+    <div class="activities-button">
     {{#link-to 'activities.create' class="btn-header"}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
-    {{else}}
-    {{#link-to 'login' class="btn-header" action='redirectToLogin'}}{{fa-icon 'fa-plus-circle'}} Add New{{/link-to}}
-    {{/if}}
     {{#each categories.data as |category|}}
     {{#link-to 'activities.index' (query-params category=category) class="btn-header"}}{{category}}{{/link-to}}
     {{/each}}
-
+</div>
 
 </div>
 

@@ -1,8 +1,15 @@
 <div class="activities-main">
-        {{activity-categories-links}}
+{{activity-categories-links}}
 
-
-
+<div class="categoriesDropdown">
+{{#x-select value=category action="changeCategory"}}
+    <option>Please Select a Category...</option>
+    {{#x-option value='new'}}Create New Activity{{/x-option}}
+    {{#each categories.data as |category|}}
+        {{#x-option value=category}}{{category}}{{/x-option}}
+    {{/each}}
+{{/x-select}}
+</div>
 </div>
 {{outlet}}
 
