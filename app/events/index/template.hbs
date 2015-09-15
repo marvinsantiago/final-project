@@ -5,10 +5,7 @@
 
     <h4>Upcoming Events</h4>
     <ul>
-    {{#if session.isAuthenticated}}
-    <li>{{#link-to 'events.create' class="btn-header"}}{{fa-icon 'fa-calendar-plus-o'}} New event{{/link-to}}</li>
-    {{else}}
-    {{/if}}
+    <li>{{#link-to 'events.create' class="btn-header" action="changeCategory"}}{{fa-icon 'fa-calendar-plus-o'}} New event{{/link-to}}</li>
     {{#each upcomingEvents as |event|}}
       <li>
         <h3>{{event.title}}</h3>
