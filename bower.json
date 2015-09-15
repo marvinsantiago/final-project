@@ -20,7 +20,7 @@
     "mousetrap": "ccampbell/mousetrap#~1.5.3",
     "reset-scss": "*",
     "ember-simple-auth": "0.8.0",
-    "moment": ">= 2.8.0",
+    "moment": "~2.10.6",
     "moment-timezone": ">= 0.1.0",
     "interact": "1.2.4",
     "jquery-simulate": "1.0.1",
@@ -32,7 +32,8 @@
     "fullcalendar": "~2.4.0",
     "momentjs": "~2.10.6",
     "validatorjs": "~1.3.2",
-    "ember-cli-moment-shim": "~0.6.2"
+    "ember-cli-moment-shim": "~0.6.2",
+    "pikaday": "~1.3.3"
   },
   "resolutions": {
     "jquery": "^1.11.3",

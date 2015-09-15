@@ -29,9 +29,16 @@ nav, footer {
   }
 
 }
-nav ul {
 
+#menu-icon {
+
+  @include media($mobile) {
+    @include span-columns(2);
+    padding-top: 10px;
+  }
 }
+
+
 
 nav ul, footer ul {
   padding: 10px 0px 5px 30px;

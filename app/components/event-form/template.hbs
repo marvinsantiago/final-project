@@ -7,10 +7,10 @@
   {{input type='text' value=location required=true}}
 
 <label for="event-date">Event Start Date</label>
-  {{input type='text' placeholder='ex: 2015-09-09 09:00' value=start required=true}}
+{{pikaday-input value=start format="MM/DD/YYYY"}}
 
 <label for="event-price">Event End Date</label>
-  {{input type='text' placeholder='ex: 2015-09-09 17:00' value=end required=true}}
+{{pikaday-input value=end format="MM/DD/YYYY"}}
 
 <label for="event-url">Website</label>
   {{input type='text' value=url required=true}}
