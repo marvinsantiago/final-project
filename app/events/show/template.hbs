@@ -1,3 +1,4 @@
+<div class="section">
 <div class='events-detail'>
     <p><h2>{{model.title}}</h2></p>
     <p>Location: {{model.location}}</p>
@@ -15,5 +16,10 @@
     </div>
 </div>
 
+    <div class='comments'>
+            {{disqus-comments identifier=model.id title=model.name}}
+    </div>
+</div>
 
 {{outlet}}
+

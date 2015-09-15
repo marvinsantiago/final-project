@@ -1,0 +1,80 @@
+#form {
+    @include span-columns(12);
+    padding: 0 30px;
+
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+    .login-form, .signup-form, .event-form, .activity-form {
+    @include span-columns(4);
+    @include shift(6);
+    border: 5px solid #e0e0e0;
+    padding: 20px;
+    margin: 50px 0;
+
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+    a {
+        text-decoration: underline;
+    }
+    button {
+        border: 1px solid #F2F7F2;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 0.9rem;
+        background: $maincolor;
+    }
+    }
+    .event-form {
+        @include span-columns(12);
+    }
+    .activity-form {
+        @include span-columns(6);
+
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+    }
+    // .image {
+    //     @include span-columns(8);
+    // }
+}
+.login-form label, input, .signup-form label, input, .event-form label, input, .activity-form label, input, select{
+    @include span-columns(12);
+    padding: 10px;
+
+    #save {
+        @include span-columns(12);
+    }
+}
+.login-form p {
+        padding-top: 20px;
+    }
+.login-form input:last-of-type, .signup-form input:last-of-type, .activity-form input:last-of-type, .event-form input:last-of-type  {
+    margin-bottom: 20px;
+}
+.signup-form label, input {
+    @include span-columns(12);
+    padding: 10px;
+    #save {
+        @include span-columns(12);
+
+    }
+}
+.activity-form label, input, select {
+    @include span-columns(12);
+
+
+    // #save {
+    //     @include span-columns(12);
+
+    // }
+}
+
+.event-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+    }
+}

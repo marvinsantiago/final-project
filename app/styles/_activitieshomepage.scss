@@ -1,17 +1,24 @@
-
-// .responsive-tablet {
-    // @include media(700px) {
-    //     @include span-columns(6);
-    // }
 section {
     @include span-columns(12);
     padding: 0 2%;
 
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+
     .section-left {
         @include span-columns(9);
 
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+
         .image {
             @include span-columns(12);
+
+            @include media($mobile) {
+                @include span-columns(12);
+        }
 
             img {
                 min-height: 300px;
@@ -43,6 +50,10 @@ section {
 
 .section-right {
     @include span-columns(3);
+    @include media($mobile) {
+        @include span-columns(12);
+
+    }
     .activites {
         @include span-columns(12);
 

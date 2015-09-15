@@ -8,11 +8,12 @@
 // @import 'ember-cli-materialize';
 
 @import "_core";
-@import "_nav";
+@import "_nav&footer";
+@import "_form";
 @import "_activitieshomepage";
-@import "_activities-list";
+@import "_activities";
 @import "_events";
-@import "_footer";
+
 
 html {
     // Cause calendar messes this up... :(
@@ -26,141 +27,28 @@ html, body {
 .main {
     @include outer-container(1080px);
 
+    @include media($mobile) {
+        @include span-columns(12);
+    }
     background-color: $altbackround;
-
 }
 
 img {
-    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 
-#form {
-    @include span-columns(12);
-    padding: 0 30px;
-    .login-form, .signup-form, .event-form, .activity-form {
-    @include span-columns(4);
-    @include shift(6);
-    border: 5px solid #e0e0e0;
-    padding: 20px;
-    margin: 50px 0;
-    a {
-        text-decoration: underline;
-    }
-    button {
-        border: 1px solid #F2F7F2;
-        padding: 5px;
-        border-radius: 3px;
-        font-size: 0.9rem;
-        background: $maincolor;
-    }
-    }
-    .event-form {
-        @include span-columns(12);
-    }
-    .activity-form {
-        @include span-columns(6);
-    }
-    // .image {
-    //     @include span-columns(8);
-    // }
-}
-.login-form label, input, .signup-form label, input, .event-form label, input, .activity-form label, input, select{
-    @include span-columns(12);
-    padding: 10px;
-
-    #save {
-        @include span-columns(12);
-    }
-}
-.login-form p {
-        padding-top: 20px;
-    }
-.login-form input:last-of-type, .signup-form input:last-of-type, .activity-form input:last-of-type, .event-form input:last-of-type  {
-    margin-bottom: 20px;
-}
-.signup-form label, input {
-    @include span-columns(12);
-    padding: 10px;
-    #save {
-        @include span-columns(12);
-
-    }
-}
-.activity-form label, input, select {
-    @include span-columns(12);
 
 
-    // #save {
-    //     @include span-columns(12);
-
-    // }
-}
-
-.event-form label, input {
-    @include span-columns(12);
-    #save {
-        @include span-columns(12);
-    }
-}
-.activities-main {
-    @include span-columns(12);
-    padding: 0 10px;
-    margin: 20px 0;
-}
-.btn-header {
-    border: 1px solid #F2F7F2;
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 0.9rem;
-    background: #F2F7F2;
-}
-.activities-list {
-    @include span-columns(12);
-    @include omega();
-    overflow: auto;
-    font-family: inherit;
-    table {
-        @include span-columns(8);
-        @include shift(2);
-        padding: 20px 0;
-    }
-    th, td {
-        padding: 7px 10px 10px;
-    }
-    th {
-        text-transform: uppercase;
-        border-bottom: 2px solid #111111;
-        border-top: 1px solid #999;
-        text-align: center;
-    }
-    tr {
-        text-align: center;
-    }
-    tr:nth-of-type(even) {
-        background: #efefef;
-    }
-    tr:last-of-type {
-        margin-bottom: 20px;
-    }
-
-
-    a {
-
-    }
-    a:hover {
-        background: none;
-        text-decoration: underline;
-    }
-
-}
 .section {
     @include span-columns(12);
+    padding: 0 50px;
     margin-bottom: 20px;
 
 
     .activities-detail {
-        @include span-columns(5);
+        @include span-columns(12);
         @include shift(1);
         min-height: 288px;
         background: #F2F7F2;
@@ -173,6 +61,27 @@ img {
             padding: 20px 0;
         }
     }
+    .events-detail {
+    @include span-columns(12);
+    // @include shift(2);
+    padding: 20px;
+    margin-top: 50px;
+    background: $background;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    h2 {
+        font-size: 1.5rem;
+        font-style: inherit;
+        font-weight: bold;
+    }
+    p {
+            font-weight: bold;
+    }
+}
+.events-edit {
+    @include span-columns(8);
+    padding: 20px;
+}
     // .activities-image {
     //     @include span-columns(7);
     //     @include omega();
@@ -182,26 +91,10 @@ img {
     //         }
 
     //     }
-        .comments {
-            @include span-columns(8);
-            margin: 80px 0;
-            padding-left: 100px;
-        }
-}
-.events-detail {
-    @include span-columns(12);
-    // @include shift(2);
-    padding: 20px;
-    margin-top: 50px;
-
-    border: 5px solid #e0e0e0;
-    line-height: 2.5rem;
-    h2 {
-        font-size: 1.5rem;
-        font-style: inherit;
+    .comments {
+        @include span-columns(12);
+        margin: 80px 0;
     }
 }
-.events-edit {
-    @include span-columns(8);
-    padding: 20px;
-}
+
+

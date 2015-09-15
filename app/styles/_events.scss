@@ -5,6 +5,10 @@
     overflow: auto;
     line-height: 2rem;
 
+    @include media($mobile) {
+        @include span-columns(12);
+    }
+
     li {
         border-bottom: 1px solid black;
 
@@ -16,6 +20,10 @@
     padding: 10px;
     font-size: 0.8rem;
     overflow: auto;
+    @include media($mobile) {
+        @include span-columns(12);
+        padding-top: 20px;
+    }
 
 }
 .events-main ul, li {
