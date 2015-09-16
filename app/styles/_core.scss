@@ -3,6 +3,7 @@ $mainfontcolor: #ffffff;
 $font: 'Jura', sans-serif;
 $background: #f2f7f2;
 $altbackround: #FFFFFF;
+$altcolor: lighten($maincolor, 10%);
 $border: 2px solid #F2F7F2;
 $mobile: max-width 500px;
 $tablet: max-width 1024px;

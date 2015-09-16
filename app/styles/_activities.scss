@@ -27,7 +27,7 @@
     padding: 5px;
     border-radius: 3px;
     font-size: 0.9rem;
-    background: #F2F7F2;
+    background: $altcolor;
     @include media($tablet) {
         font-size: 0.7rem;
         visibility: hidden;

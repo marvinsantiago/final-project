@@ -25,7 +25,7 @@ header {
 }
 nav, footer {
   clear: both;
-  background-color: lighten($maincolor, 10%);
+  background-color: $altcolor;
   height: 40px;
 
   @include media($tablet) {
