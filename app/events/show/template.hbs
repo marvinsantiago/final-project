@@ -10,7 +10,7 @@
     <div class='events-edit'>
         {{#if session.isAuthenticated}}
         {{#link-to 'events.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
-        <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-times'}}</a>
+{{!--         <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-trash-o'}}</a> --}}
         {{else}}
         {{/if}}
     </div>
