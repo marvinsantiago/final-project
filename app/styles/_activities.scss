@@ -12,7 +12,15 @@
             visibility: visible;
             margin: none;
         }
+    @include media($mobile) {
+        @include span-columns(12);
+        .categoriesDropdown {
+            visibility: visible;
+            margin: none;
+        }
 }
+}
+
 
 .btn-header {
     border: 1px solid #F2F7F2;
@@ -37,16 +45,38 @@
         @include omega();
         font-size: 0.7rem;
     }
+    @include media($mobile) {
+        @include span-columns(12);
+        @include omega();
+        font-size: 0.5rem;
+    }
 
     table {
         @include span-columns(12);
         // @include shift(2);
         padding: 10px;
+        @include media($tablet) {
+            @include span-columns(12);
+            padding: 0 5px;
+        }
     }
     th, td {
         padding: 7px 10px 10px;
         @include media($tablet) {
             padding: 7px 0 5px;
+        }
+        @include media($mobile) {
+            padding: 7px 0 5px;
+        }
+    }
+    td {
+        @include media($mobile) {
+            padding-right: 5px;
+        }
+        p {
+            a {
+                word-wrap: break-word;
+            }
         }
     }
     th {
@@ -54,10 +84,21 @@
         border-bottom: 2px solid #111111;
         border-top: 1px solid #999;
         text-align: center;
+        @include media($mobile) {
+            text-align: left;
+        }
 
+    }
+    th:last-of-type {
+        @include media($mobile) {
+            padding-left: 10px;
+        }
     }
     tr {
         text-align: center;
+        @include media($mobile) {
+            text-align: left;
+        }
     }
     tr:nth-of-type(even) {
         background: #efefef;
