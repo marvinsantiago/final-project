@@ -15,6 +15,7 @@ section {
 
         .image {
             @include span-columns(12);
+            padding: 20px 0;
 
             @include media($tablet) {
                 @include span-columns(12);

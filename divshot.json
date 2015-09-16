@@ -1,5 +1,5 @@
 {
-  "name": "ms-final-project",
+  "name": "ms-all-things-kid-guide",
   "root": "./dist",
   "routes": {
     "/tests": "tests/index.html",
