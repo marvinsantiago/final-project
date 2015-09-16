@@ -23,7 +23,7 @@
     <h4>{{#link-to 'activities'}}Popular Activities{{/link-to}}</h4>
     <ul>
         {{#each model.activities as |activity|}}
-            <li>{{#link-to 'activities.show' activity}}{{fa-icon 'fa-star-o'}} - {{activity.name}}{{/link-to}}</li>
+            <li>{{fa-icon 'fa-star-o'}} - {{activity.name}}</li>
         {{/each}}
     </ul>
     </div>

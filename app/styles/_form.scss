@@ -9,6 +9,7 @@
     @include span-columns(6);
     // @include shift(6);
     border: 5px solid #e0e0e0;
+    border-radius: 3px;
     padding: 20px;
     margin: 50px 0;
 
@@ -87,4 +88,7 @@
     #save {
         @include span-columns(12);
     }
+}
+.activity-form select {
+    font-family: inherit;
 }

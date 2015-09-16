@@ -71,6 +71,11 @@ section {
             font-size: 2rem;
             font-weight: bold;
             padding-bottom: 10px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
         }
         ul li {
             padding-bottom: 8px;
@@ -123,6 +128,11 @@ section {
             font-size: 2rem;
             font-weight: bold;
             padding-bottom: 10px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
         }
         ul li {
             font-size: 0.9rem;
@@ -130,6 +140,11 @@ section {
             line-height: 20px;
             text-align: left;
             padding: 0 5px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
         }
     }
 }
