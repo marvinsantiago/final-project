@@ -6,7 +6,7 @@
         visibility: hidden;
     }
 
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
         .categoriesDropdown {
             visibility: visible;
@@ -20,7 +20,7 @@
     border-radius: 3px;
     font-size: 0.9rem;
     background: #F2F7F2;
-    @include media($mobile) {
+    @include media($tablet) {
         font-size: 0.7rem;
         visibility: hidden;
     }
@@ -32,7 +32,7 @@
     @include omega();
     overflow: auto;
     font-family: inherit;
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
         @include omega();
         font-size: 0.7rem;
@@ -45,7 +45,7 @@
     }
     th, td {
         padding: 7px 10px 10px;
-        @include media($mobile) {
+        @include media($tablet) {
             padding: 7px 0 5px;
         }
     }

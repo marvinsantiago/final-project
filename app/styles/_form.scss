@@ -2,7 +2,7 @@
     @include span-columns(12);
     padding: 0 50px;
 
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
     }
     .login-form, .signup-form, .event-form, .activity-form {
@@ -13,7 +13,7 @@
     padding: 20px;
     margin: 50px 0;
 
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
     }
     a {
@@ -38,14 +38,14 @@
     .activity-form {
         @include span-columns(6);
 
-        @include media($mobile) {
+        @include media($tablet) {
             @include span-columns(12);
         }
     }
     .image {
         @include span-columns(6);
         @include omega();
-        @include media($mobile) {
+        @include media($tablet) {
             @include span-columns(12);
         }
     }

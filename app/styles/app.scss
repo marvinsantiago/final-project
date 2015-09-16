@@ -27,7 +27,7 @@ html, body {
 .main {
     @include outer-container(1080px);
 
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
     }
     background-color: $altbackround;

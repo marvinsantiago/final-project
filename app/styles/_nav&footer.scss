@@ -4,7 +4,7 @@ header {
   display: block;
   height: 100px;
 
-  @include media($mobile) {
+  @include media($tablet) {
     text-align: center;
   }
 
@@ -24,7 +24,7 @@ nav, footer {
   background-color: lighten($maincolor, 10%);
   height: 40px;
 
-  @include media($mobile) {
+  @include media($tablet) {
     @include span-columns(12);
   }
 
@@ -32,7 +32,7 @@ nav, footer {
 
 #menu-icon {
 
-  @include media($mobile) {
+  @include media($tablet) {
     @include span-columns(2);
     padding-top: 10px;
   }
@@ -42,12 +42,12 @@ nav, footer {
 
 nav ul, footer ul {
   padding: 10px 0px 5px 30px;
-    @include media($mobile) {
+    @include media($tablet) {
       padding: 10px 0px 5px 30px;
   }
 }
 footer ul {
-  @include media($mobile) {
+  @include media($tablet) {
       padding: 10px 0px 5px 15px;
   }
 }
@@ -61,7 +61,7 @@ nav li, footer li {
     margin-right: 40px;
 
 
-    @include media($mobile) {
+    @include media($tablet) {
       font-size: 0.8rem;
 
     }
@@ -69,14 +69,14 @@ nav li, footer li {
   }
   footer li {
     font-size: 1rem;
-    @include media($mobile) {
+    @include media($tablet) {
       font-size: 0.4rem;
       margin: auto;
       padding: 0 10px;
     }
     }
   footer li:first-of-type {
-    @include media($mobile) {
+    @include media($tablet) {
       padding-right: 20px;
     }
   }

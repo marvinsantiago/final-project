@@ -2,21 +2,21 @@ section {
     @include span-columns(12);
     padding: 0 2%;
 
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
     }
 
     .section-left {
         @include span-columns(9);
 
-        @include media($mobile) {
+        @include media($tablet) {
             @include span-columns(12);
         }
 
         .image {
             @include span-columns(12);
 
-            @include media($mobile) {
+            @include media($tablet) {
                 @include span-columns(12);
         }
 
@@ -50,7 +50,7 @@ section {
 
 .section-right {
     @include span-columns(3);
-    @include media($mobile) {
+    @include media($tablet) {
         @include span-columns(12);
 
         text-align: center;
