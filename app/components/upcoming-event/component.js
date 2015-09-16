@@ -7,7 +7,6 @@ export default Ember.Component.extend({
   upcomingEvents: Ember.computed('events', 'event.@each.date', function() {
     return this.get('events').reduce((prev, current) => {
       var date = current.get('date');
-      debugger;
       if (date > moment(date.start)) {
         prev.push(current);
       }

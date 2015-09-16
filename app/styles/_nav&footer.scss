@@ -65,7 +65,7 @@ nav li, footer li {
   footer li {
     font-size: 1rem;
     @include media($mobile) {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
     }
   }
 

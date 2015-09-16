@@ -1,5 +1,5 @@
 {
-  "name": "madaddox",
+  "name": "ms-final-project",
   "root": "./dist",
   "routes": {
     "/tests": "tests/index.html",
