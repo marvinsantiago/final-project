@@ -89,7 +89,7 @@
         }
 
     }
-    th:last-of-type {
+    th:last-of-type, td:last-of-type {
         @include media($mobile) {
             padding-left: 10px;
         }

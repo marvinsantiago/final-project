@@ -15,7 +15,7 @@ header {
     }
     p {
       font-style: italic;
-      padding-bottom: 10px;
+      padding: 2px 0 4px;
       padding-left: 10px;
       @include media($mobile) {
         font-size: 0.8rem;
@@ -34,13 +34,13 @@ nav, footer {
 
 }
 
-#menu-icon {
+// #menu-icon {
 
-  @include media($tablet) {
-    @include span-columns(2);
-    padding-top: 10px;
-  }
-}
+//   @include media($tablet) {
+//     @include span-columns(2);
+//     padding-top: 10px;
+//   }
+// }
 
 
 
@@ -57,6 +57,8 @@ nav ul {
   }
 }
 footer ul {
+  text-align: center;
+
   @include media($tablet) {
       padding: 10px 0px 5px 15px;
   }
@@ -64,6 +66,7 @@ footer ul {
 
 nav li {
   font-size: 1.1rem;
+
 }
 
 nav li, footer li {
