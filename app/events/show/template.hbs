@@ -1,11 +1,11 @@
 <div class="section">
 <div class='events-detail'>
     <p><h2>{{model.title}}</h2></p>
-    <p>Location: {{model.location}}</p>
-    <p>Date: {{moment-format model.start 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.end 'hh:mm A' 'YYYY-MM-DD hh:mm'}}</p>
-    <p>Price: {{model.price}}</p>
-    <p>Website: <a href="{{model.url}}">{{model.url}}</a></p>
-    <p>Description: {{model.description}}</p>
+    <p>Location: <span>{{model.location}}</span></p>
+    <p>Date: <span>{{moment-format model.start 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.end 'hh:mm A' 'YYYY-MM-DD hh:mm'}}</span></p>
+    <p>Price: <span>{{model.price}}</span></p>
+    <p>Website: <span><a href="{{model.url}}">{{model.url}}</a></span></p>
+    <p>Description: <span>{{model.description}}</span></p>
 
     <div class='events-edit'>
         {{#if session.isAuthenticated}}
