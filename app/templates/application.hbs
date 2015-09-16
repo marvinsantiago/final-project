@@ -8,7 +8,7 @@
     <li>{{#link-to 'dashboard'}}Home{{/link-to}}</li>
     <li>{{#link-to 'activities' (query-params category=null)}}Activities{{/link-to}}</li>
     <li>{{#link-to 'events'}}Events{{/link-to}}</li>
-    <li> <a href="#" {{action 'invalidateSession'}}>Sign Out</a></li>
+    <li> <a href="#" {{action 'invalidateSession'}}>Log Out</a></li>
     {{else}}
     <li>{{#link-to 'index'}}Home{{/link-to}}</li>
     <li>{{#link-to 'activities' (query-params category=null)}}Activities{{/link-to}}</li>
@@ -29,7 +29,7 @@
 
 <footer>
     <ul>
-        <li>{{fa-icon 'fa-copyright'}} Copyright 2015 - Marvin Santiago</li>
+        <li>{{fa-icon 'fa-copyright'}} Marvin Santiago - 2015</li>
         <li><a href="#">{{fa-icon 'fa-twitter'}}</a></li>
         <li><a href="#">{{fa-icon 'fa-instagram'}}</a></li>
         <li><a href="#">{{fa-icon 'fa-facebook'}}</a></li>

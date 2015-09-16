@@ -32,7 +32,7 @@
             <h4>{{#link-to 'events'}}Upcoming Events{{/link-to}}</h4>
             <ul>
                 {{#each upcomingEvents as |event|}}
-                    <li>{{#link-to 'events'}}{{fa-icon 'fa-angle-double-right'}} {{event.title}}{{/link-to}}</li>
+                    <li>{{#link-to 'events.show' event}}{{fa-icon 'fa-angle-double-right'}} {{event.title}}{{/link-to}}</li>
                 {{/each}}
             </ul>
             </div>
