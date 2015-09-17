@@ -1,0 +1,57 @@
+
+.events-main {
+    @include span-columns(2);
+    padding: 0 10px;
+    overflow: auto;
+    line-height: 1.5rem;
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+
+    li {
+        border-bottom: 1px solid black;
+            .btn-header {
+                font-size: 0.9rem;
+                padding: 5px;
+                border-radius: 3px;
+                margin-bottom: 15px;
+                background: $altcolor;
+            }
+            h3 {
+                font-size: 1.9rem;
+
+            }
+            a {
+                font-size: 0.8rem;
+            }
+
+
+    }
+    li:first-of-type {
+        border: none;
+    }
+    li:nth-child(2) {
+        margin-top: 10px;
+        border-top: 1px solid #999;
+    }
+}
+.calendar {
+    @include span-columns(10);
+    @include omega();
+    padding: 10px;
+    font-size: 0.8rem;
+    overflow: auto;
+    @include media($tablet) {
+        @include span-columns(12);
+        padding-top: 20px;
+    }
+
+}
+.events-main ul, li {
+        h3 {
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+}

@@ -1,0 +1,11 @@
+{{#each categories as |category|}}
+    <div class="category">
+        <h4>{{category.name}}</h4>
+        {{#each category.categories as |activity|}}
+            <li>{{activity.category}}</li>
+        {{/each}}
+
+    </div>
+{{/each}}
+
+{{!-- {{yield}} --}}

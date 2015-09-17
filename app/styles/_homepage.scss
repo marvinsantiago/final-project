@@ -1,0 +1,131 @@
+section {
+    @include span-columns(12);
+    padding: 0 2%;
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+
+    .section-left {
+        @include span-columns(9);
+
+        @include media($tablet) {
+            @include span-columns(12);
+        }
+
+        .image {
+            @include span-columns(12);
+            padding: 20px 0;
+
+            @include media($tablet) {
+                @include span-columns(12);
+        }
+
+            img {
+                min-height: 300px;
+            }
+        }
+}
+
+.section-right {
+    @include span-columns(3);
+    @include media($tablet) {
+        @include span-columns(12);
+
+        text-align: center;
+
+    }
+    .currentweather {
+        @include span-columns(12);
+        @include omega();
+        background: $background;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+        font-family: inherit;
+        text-align: center;
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            // text-align: center;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+            span {
+                font-size: 1.4rem;
+            }
+            span:last-of-type {
+                line-height: -15px;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-bottom: 10px;
+        }
+    }
+    .activites {
+        @include span-columns(12);
+
+        background: $background;
+        border-radius: 5px;
+
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px;
+        font-family: inherit;
+
+        h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
+        }
+        ul li {
+            padding-bottom: 8px;
+            line-height: 18px;
+            text-align: left;
+        }
+    }
+        .events {
+        @include span-columns(12);
+        background: $background;
+        padding: 15px 5px;
+        margin: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+        font-family: inherit;
+        h4 {
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 10px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
+        }
+        ul li {
+            font-size: 0.9rem;
+            padding-bottom: 8px;
+            line-height: 20px;
+            text-align: left;
+            padding: 0 5px;
+
+            a:hover {
+                text-decoration: underline;
+                background: none;
+            }
+        }
+    }
+}
+}
+
+

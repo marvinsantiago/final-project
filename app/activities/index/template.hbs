@@ -1,0 +1,39 @@
+{{!-- <div class="activities-list"> --}}
+{{!-- <div class='activities-image'>
+    <img src="/images/activities.gif" alt="Activities">
+</div> --}}
+{{!-- {{#each categories as |category|}} --}}
+
+<h2>{{category.name}}</h2>
+
+
+<div class="activities-main">
+
+        <div class="activities-list">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Website</th>
+            </tr>
+
+            {{#each model as |activity|}}
+            <tr>
+            {{#unless activity.isNew}}
+            <td><p>{{activity.name}}</p></td>
+            <td><p>{{activity.location}}</p></td>
+            <td><p><a href="tel:{{activity.phone}}">{{activity.phone}}</a></p></td>
+            <td><p><a href="{{activity.url}}">{{activity.url}}</a></p></td>
+            {{/unless}}
+            </tr>
+            {{/each}}
+
+        </table>
+           </div>
+</div>
+
+{{!-- </div> --}}
+
+
+{{outlet}}

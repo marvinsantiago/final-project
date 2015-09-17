@@ -1,0 +1,24 @@
+$maincolor: #94c675;
+$mainfontcolor: #ffffff;
+$font: 'Jura', sans-serif;
+$background: #f2f7f2;
+$altbackround: #FFFFFF;
+$altcolor: lighten($maincolor, 10%);
+$border: 2px solid #F2F7F2;
+$mobile: max-width 500px;
+$tablet: max-width 1024px;
+
+
+body {
+    background-color: $background;
+    // @include outer-container(1080px);
+
+    font-family: $font;
+
+
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

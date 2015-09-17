@@ -1,0 +1,25 @@
+<div class="section">
+<div class='events-detail'>
+    <p><h2>{{model.title}}</h2></p>
+    <p>Location: <span>{{model.location}}</span></p>
+    <p>Date: <span>{{moment-format model.start 'MMM Do, hh:mm A' 'YYYY-MM-DD hh:mm'}} - {{moment-format model.end 'hh:mm A' 'YYYY-MM-DD hh:mm'}}</span></p>
+    <p>Price: <span>{{model.price}}</span></p>
+    <p>Website: <span><a href="{{model.url}}">{{model.url}}</a></span></p>
+    <p>Description: <span>{{model.description}}</span></p>
+
+    <div class='events-edit'>
+        {{#if session.isAuthenticated}}
+        {{#link-to 'events.edit' model}}{{fa-icon 'fa-pencil-square-o'}}{{/link-to}}
+{{!--         <a href="#"{{action 'delete' model}}>{{fa-icon 'fa-trash-o'}}</a> --}}
+        {{else}}
+        {{/if}}
+    </div>
+</div>
+
+    <div class='comments'>
+            {{disqus-comments identifier=model.id title=model.name}}
+    </div>
+</div>
+
+{{outlet}}
+

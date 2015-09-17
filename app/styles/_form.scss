@@ -1,0 +1,102 @@
+#form {
+    @include span-columns(12);
+    padding: 0 50px;
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+    .login-form, .signup-form, .event-form, .activity-form {
+    @include span-columns(6);
+    // @include shift(6);
+    border: 3px solid $altcolor;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 50px 0;
+    background-color: $background;
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+    a {
+        text-decoration: underline;
+    }
+    button {
+        border: 1px solid #F2F7F2;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background: $altcolor;
+        font-family: inherit;
+    }
+    select {
+        font-family: inherit;
+        font-size: 0.9rem;
+    }
+    }
+    .event-form {
+        @include span-columns(12);
+    }
+    .activity-form {
+        @include span-columns(6);
+
+        @include media($tablet) {
+            @include span-columns(12);
+        }
+    }
+    .image {
+        @include span-columns(6);
+        @include omega();
+        @include media($tablet) {
+            @include span-columns(12);
+        }
+    }
+}
+.login-form label, input, .signup-form label, input, .event-form label, input, .activity-form label, input, select{
+    @include span-columns(12);
+    padding: 10px;
+
+    #save {
+        @include span-columns(12);
+    }
+}
+.login-form p {
+    padding-top: 20px;
+}
+.login-form h2, .signup-form h2, .event-form h2, .activity-form h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid $altcolor;
+    padding: 0 0 5px 10px;
+}
+.login-form input:last-of-type, .signup-form input:last-of-type, .activity-form input:last-of-type, .event-form input:last-of-type  {
+    margin-bottom: 20px;
+}
+.signup-form label, input {
+    @include span-columns(12);
+    padding: 10px;
+    #save {
+        @include span-columns(12);
+
+    }
+}
+.activity-form label, input, select {
+    @include span-columns(12);
+
+
+
+    // #save {
+    //     @include span-columns(12);
+
+    // }
+}
+
+.event-form label, input {
+    @include span-columns(12);
+    #save {
+        @include span-columns(12);
+    }
+}
+.activity-form select {
+    font-family: inherit;
+}

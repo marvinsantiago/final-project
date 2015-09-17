@@ -1,3 +1,45 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="main">
+<header>
+    <h1>{{fa-icon 'fa-child'}} All Things Kid</h1><p>Local Guide For After-School Activities and Events</p>
+<nav>
 
-{{outlet}}
+    <ul>
+    {{#if session.isAuthenticated}}
+    <li>{{#link-to 'dashboard'}}Home{{/link-to}}</li>
+    <li>{{#link-to 'activities' (query-params category=null)}}Activities{{/link-to}}</li>
+    <li>{{#link-to 'events'}}Events{{/link-to}}</li>
+    <li> <a href="#" {{action 'invalidateSession'}}>Log Out</a></li>
+    {{else}}
+    <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li>{{#link-to 'activities' (query-params category=null)}}Activities{{/link-to}}</li>
+    <li>{{#link-to 'events'}}Events{{/link-to}}</li>
+    <li>{{link-to 'Login' 'login'}}</li>
+
+    {{/if}}
+</ul>
+</nav>
+</header>
+
+{{!-- <div class="background"></div> --}}
+<div class='main'>
+    {{outlet}}
+</div>
+
+
+
+<footer>
+    <ul>
+        <li>{{fa-icon 'fa-copyright'}} Marvin Santiago - 2015</li>
+        <li><a href="#">{{fa-icon 'fa-twitter'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-instagram'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-facebook'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-pinterest'}}</a></li>
+        <li><a href="#">{{fa-icon 'fa-tumblr'}}</a></li>
+    </ul>
+</footer>
+
+</div>
+
+
+
+{{!-- {{md-modal-container}} --}}

@@ -1,0 +1,130 @@
+// @import 'addons/ember-calendar/main';
+@import 'reset';
+@import "bourbon";
+@import "neat";
+@import 'border-box';
+
+// @import 'materialize';
+// @import 'ember-cli-materialize';
+
+@import "_core";
+@import "_nav&footer";
+@import "_form";
+@import "_homepage";
+@import "_activities";
+@import "_events";
+
+
+html {
+    // Cause calendar messes this up... :(
+    // overflow: visible;
+}
+
+html, body {
+    overflow: initial;
+
+}
+.main {
+    @include outer-container(1080px);
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+    background-color: $altbackround;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.section {
+    @include span-columns(12);
+    padding: 0 50px;
+    margin-bottom: 20px;
+
+    @include media($tablet) {
+        @include span-columns(12);
+    }
+
+
+    .activities-detail {
+        @include span-columns(12);
+        @include shift(1);
+        min-height: 288px;
+        background: #F2F7F2;
+        border-radius: 3px;
+        line-height: 2rem;
+        text-align: center;
+        h2 {
+            font-size: 1.5rem;
+            font-style: inherit;
+            padding: 20px 0;
+        }
+    }
+    .events-detail {
+    @include span-columns(12);
+    // @include shift(2);
+    padding: 20px;
+    margin-top: 50px;
+    background: $background;
+    border-radius: 5px;
+    line-height: 1.5rem;
+
+    @include media($tablet) {
+        @include span-columns(12);
+        @include omega();
+    }
+    @include media($mobile) {
+        @include span-columns(12);
+
+    }
+    h2 {
+        font-size: 1.7rem;
+        font-style: inherit;
+        font-weight: bold;
+        padding-bottom: 10px;
+
+    }
+    p {
+        font-weight: bold;
+        font-size: 1.2rem;
+        span {
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+        a {
+            word-wrap: break-word;
+        }
+    }
+}
+.events-edit {
+    @include span-columns(8);
+    padding-top: 15px;
+}
+    // .activities-image {
+    //     @include span-columns(7);
+    //     @include omega();
+    //     border: 3px solid #F2F7F2;
+    //         img {
+    //             max-width: 100%;
+    //         }
+
+    //     }
+    .comments {
+        @include span-columns(12);
+        margin-top: 80px;
+
+        @include media($tablet) {
+            @include span-columns(12);
+        }
+        @include media($mobile) {
+            @include span-columns(12);
+        }
+    }
+}
+
+

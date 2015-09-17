@@ -1,0 +1,10 @@
+<div class="activities-main">
+    <div class="activities-button">
+    {{#link-to 'activities.create' class="btn-header" action="changeCategory"}}{{fa-icon 'fa-plus-circle'}}{{/link-to}}
+    {{#each categories.data as |category|}}
+    {{#link-to 'activities.index' (query-params category=category) class="btn-header"}}{{category}}{{/link-to}}
+    {{/each}}
+</div>
+
+</div>
+

@@ -1,0 +1,25 @@
+<div id="form">
+<form class="activity-form" {{action 'save' on='submit'}}>
+<h2>New Activity</h2>
+<label for="activity-name">Name</label>
+  {{input type='text' value=name}}
+
+<label for="activity-category">Category</label>
+{{#x-select value=category}}
+    <option>Please Select a Category...</option>
+    {{#each categories.data as |category|}}
+        {{#x-option value=category}}{{category}}{{/x-option}}
+    {{/each}}
+{{/x-select}}
+
+<label for="activity-location">Location</label>
+  {{input type='text' value=location}}
+<label for="activity-phone">Phone</label>
+  {{input type='text' value=phone}}
+
+<label for="activity-url">Website</label>
+  {{input type='text' value=url}}
+
+    <button id='save' type='submit'>Save</button>
+</form>
+</div>
