@@ -44,14 +44,14 @@
         @include span-columns(12);
         @include omega();
         font-size: 0.7rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     @include media($mobile) {
         @include span-columns(12);
         @include omega();
         font-size: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     table {
